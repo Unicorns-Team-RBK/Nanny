@@ -1,0 +1,1 @@
+//Navbar after sign up and login -- adding the account emoji 
