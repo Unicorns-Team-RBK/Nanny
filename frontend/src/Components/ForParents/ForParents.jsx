@@ -51,7 +51,8 @@ function ForParent() {
       <p>We personally coordinate on-call and last minute babysitting so you don’t have to scramble</p>
       <p>We schedule interviews and coordinate trials so you don’t have to play phone tag or worry about scheduling with multiple candidates.</p>
   </div>
-  <div className="part4">
+  
+  <div className="part5">
   <h3>OUR NANNIES</h3>
   <p>When we meet with nannies , we’re looking for a lot more than just standard qualifications. In fact, our recruitment directors won’t lower their standards to meet demand. We'll hand select our top candidates for your family, and we stand behind every candidate that we present. We think they’re all pretty special.
    All of the Nannies on our site have completed our six step screening process. Click below to view individual biographies of our selective group of Nannies.</p>

@@ -4,13 +4,14 @@ import './index.css';
 
 //IMPORTING ALL THE COMPONENTS 
 // import Navbar from './Components/Navbar'
-// import Homepage from './Components/HomePage'
-import ForParent from './Components/ForParents/ForParents'
+import Homepage from './Components/HomePage'
+// import ForParent from './Components/ForParents/ForParents'
 // import ForNannies from './Components/ForNannies/ForNannies'
 
 ReactDOM.render(
-  <ForParent />,
+  <Homepage />,
   document.getElementById('root')
 );
+
 
 
