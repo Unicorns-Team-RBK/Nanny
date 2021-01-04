@@ -1,7 +1,7 @@
 function Navbar1() {
 
     return (
-      <div className="Navbar1">
+      <header>
       <nav>
         <ul>
             <li><a> FOR PARENT </a></li>
@@ -11,7 +11,7 @@ function Navbar1() {
             <li><a> SINUP </a></li>
         </ul>
      </nav>
-     </div>
+     </header>
     );
   }
   

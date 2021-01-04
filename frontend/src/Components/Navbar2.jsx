@@ -1,7 +1,7 @@
 //Navbar after sign up and login -- adding the account emoji 
 function Navbar2() {
     return (
-        <div className="Navbar2">
+        <header>
         <nav>
           <ul>
               <li><a> FOR PARENT </a></li>
@@ -10,7 +10,7 @@ function Navbar2() {
               <li><a> ACCOUNT </a></li>
           </ul>
        </nav>
-       </div>
+       </header>
     );
   }
   
