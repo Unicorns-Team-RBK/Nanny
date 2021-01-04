@@ -3,10 +3,11 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 //IMPORTING ALL THE COMPONENTS 
-import Navbar from './Components/Navbar'
+// import Navbar from './Components/Navbar'
+import Homepage from './Components/HomePage'
 // 
 ReactDOM.render(
-  <Navbar />,
+  <Homepage/>,
   document.getElementById('root')
 );
 

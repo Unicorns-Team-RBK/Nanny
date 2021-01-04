@@ -1,5 +1,4 @@
 function Navbar1() {
-
     return (
       <header>
       <nav>
