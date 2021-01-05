@@ -8,7 +8,7 @@ function HomePage() {
         </div>
         <h1>Supporting Families with Trusted &amp; Vetted Child Care</h1>
 				<p className="sub-title">Exceptional Nannies for Exceptional Families.</p>
-        <button className="btn">For Families</button>
+        <button className="btn">For Parents</button>
         <button className="btn">For Nannies</button>
         </div>
 
