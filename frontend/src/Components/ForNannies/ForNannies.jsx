@@ -15,7 +15,7 @@ function ForNannies() {
       </div>
       </div>
      <div className="part2">
-      <h1>NANNIES FamilySupport and YOU</h1>
+      <h1>NANNIES FamilySupport &amp; YOU</h1>
       <h2>We’re here to help you with the professional side of child care so that you can focus on what you do best – working with kids.</h2>
       <p>A working relationship that takes place in someone’s home is very personal, so discussing compensation details like salaries and paid time off with your family employer can be challenging. We’re here to help you balance the personal and the professional from the very beginning.
         Our internal team is always available to help you find the right way to ask a sensitive question or to navigate a challenging situation. We also jump in to help make sure your SmartSitting family has coverage if you get sick or an emergency comes up. We have an incredible appreciation and admiration for our talented community of caregivers and the work that they do.</p>
