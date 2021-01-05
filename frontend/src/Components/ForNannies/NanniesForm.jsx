@@ -56,6 +56,13 @@ var NanniesForm = function () {
                     </div>
                 </div>
             </div>
+            <div class="wrap">
+            <div class="row">
+				<div class="columns text-center">
+					<input class="btn submit" type="submit" value="Submit Application"></input>
+				</div>
+			</div>
+            </div>
         </form>
     )
 }
