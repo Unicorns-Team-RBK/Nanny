@@ -7,52 +7,52 @@
 var NanniesForm = function () {
     return (
         <form>
-            <div class="wrap">
+            <div className="wrap">
 
-                <div class="row">
-                    <div class="columns text-center">
+                <div className="row">
+                    <div className="columns text-center">
                         <h5>Nanny's Information</h5>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="columns special">
-                        <input class="required" placeholder="First Name*" name="first_name" type="text"></input>
+                <div className="row">
+                    <div className="columns special">
+                        <input className="required" placeholder="First Name*" name="first_name" type="text"></input>
                     </div>
-                    <div class="columns">
-                        <input class="required" placeholder="Last Name*" name="last_name" type="text"></input>
+                    <div className="columns">
+                        <input className="required" placeholder="Last Name*" name="last_name" type="text"></input>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="columns">
-                        <input id="email" class="required email" placeholder="E-mail Address*" name="email_address" type="email"></input>
+                <div className="row">
+                    <div className="columns">
+                        <input id="email" className="required email" placeholder="E-mail Address*" name="email_address" type="email"></input>
                     </div>
-                    <div class="columns">
-                        <input id="phone" class="required" placeholder="Phone Number*" name="phone" type="text"></input>
+                    <div className="columns">
+                        <input id="phone" className="required" placeholder="Phone Number*" name="phone" type="text"></input>
                     </div>
                 </div>
             </div>
 
-            <div class="wrap">
-                <div class="row">
-                    <div class="columns text-center">
+            <div className="wrap">
+                <div className="row">
+                    <div className="columns text-center">
                         <h5>Write your password</h5>
                     </div>
-                    <div class="columns">
-                        <input id="password" class="required" placeholder="your password*" name="password" type="password"></input>
+                    <div className="columns">
+                        <input id="password" className="required" placeholder="your password*" name="password" type="password"></input>
                     </div>
                 </div>
             </div>
 
-            <div class="wrap">
-                <div class="row">
-                    <div class="columns text-center">
+            <div className="wrap">
+                <div className="row">
+                    <div className="columns text-center">
                         <h5>Tell us something about yourself</h5>
 
                     </div>
-                    <div class="columns">
-                        <textarea id="about_nanny" class="not required" placeholder="what are you good at ?why a parent will prefer you over other nannies ?" rows="10" cols="150" name="aboutnany"></textarea>
+                    <div className="columns">
+                        <textarea id="about_nanny" className="not required" placeholder="what are you good at ?why a parent will prefer you over other nannies ?" rows="10" cols="150" name="aboutnany"></textarea>
                     </div>
                 </div>
             </div>
