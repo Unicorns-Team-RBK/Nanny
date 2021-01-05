@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+*{
+    margin:0 ;
+    padding:0;
+}
+
+
+
+header {
+    background-color:white;
+    background-size: cover ; 
+    background-position: center;
+}
+.navbar{
+    display: flex;
+    padding: 20px;
+}
+
+nav{
+    flex :1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    list-style-type:none ;
+
+}
+nav ul li {
+    display: inline-block;
+    margin: auto;
+    margin-right: 60px;
+
+}
+a{
+    text-decoration: none;
+    color:#9A1890;
+}
+.logo {
+    widows: 80px;
+    height: auto;
+    float: left;
+    width: 150px;
+    margin-top:1;
+    margin-right: 30%;
+
+}
