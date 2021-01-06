@@ -1,7 +1,11 @@
-import '../Components/Css files/Navbar1.css'
-function Navbar1() {
+import '../Components/Css files/Header.css'
+import React from "react";
+import { Link } from "react-router-dom";
+
+export default function Header () {
     return (
-      <header>
+      <header id="header">
+        <Link to="/">
         <img class="logo" src="https://www.logodesign.net/logo-new/nanny-with-baby-carriage-8236ld.png?size=1" alt="logo"></img>
       <nav>
         <ul>
@@ -12,8 +16,8 @@ function Navbar1() {
             <li><a href="#"> SINUP </a></li>
         </ul>
      </nav>
+     </Link>
      </header>
     );
   }
   
-  export default Navbar1;

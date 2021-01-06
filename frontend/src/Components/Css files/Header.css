@@ -3,13 +3,16 @@
     margin:0 ;
     padding:0;
 }
-
-
-
 header {
     background-color:white;
     background-size: cover ; 
     background-position: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f39cd2;
+  
 }
 .navbar{
     display: flex;
@@ -33,14 +36,14 @@ nav ul li {
 }
 a{
     text-decoration: none;
-    color:#9A1890;
+    color:#5e0957;
 }
 .logo {
-    widows: 80px;
+    widows: 150px;
     height: auto;
     float: left;
-    width: 150px;
+    width: 200px;
     margin-top:1;
-    margin-right: 30%;
+    margin-right: 50%;
 
 }
