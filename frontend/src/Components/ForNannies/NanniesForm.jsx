@@ -3,6 +3,16 @@ export default function NanniesForm  () {
         <div className="page">
         <h2>NANNIES FORM </h2>
         <form className="form" >
+        <label htmlFor="register-display-name">First Name</label>
+          <input
+            id="register-display-name"
+            type="text"
+          />
+           <label htmlFor="register-display-name">Last name</label>
+          <input
+            id="register-display-name"
+            type="text"
+          />
           <label htmlFor="register-email">Email</label>
           <input
             id="register-email"
@@ -18,13 +28,6 @@ export default function NanniesForm  () {
             type="password"
             placeholder="Verify password"
           />
-  
-          <label htmlFor="register-display-name">Name</label>
-          <input
-            id="register-display-name"
-            type="text"
-          />
-  
           <input type="submit" value="Register" />
  
            <div className="columns text-center">
