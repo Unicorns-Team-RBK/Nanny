@@ -1,4 +1,10 @@
+import React, { useState} from "react";
 export default function ParentsForm () {
+  const [displayFirstName, setDisplayFirstName] = useState();
+  const [displayLastName, setDisplayLastName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [passwordCheck, setPasswordCheck] = useState();
     return (
         <div className="page">
         <h2>WELCOME TO MY GOOD NANNY</h2>
@@ -9,26 +15,31 @@ export default function ParentsForm () {
           <input
             id="register-display-name"
             type="text"
+            onChange={(e) => setDisplayFirstName(e.target.value)}
           />
            <label htmlFor="register-display-name">Last name</label>
           <input
             id="register-display-name"
             type="text"
+            onChange={(e) => setDisplayLastName(e.target.value)}
           />
           <label htmlFor="register-email">Email</label>
           <input
             id="register-email"
             type="email"
+            onChange={(e) => setEmail(e.target.value)}
           />
   
           <label htmlFor="register-password">Password</label>
           <input
             id="register-password"
             type="password"
+            onChange={(e) => setPassword(e.target.value)}
           />
           <input
             type="password"
             placeholder="Verify password"
+            onChange={(e) => setPasswordCheck(e.target.value)}
           />
   
           <input type="submit" value="Register" />
