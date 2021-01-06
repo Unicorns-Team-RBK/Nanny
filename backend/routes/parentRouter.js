@@ -2,6 +2,7 @@ const router = require("express").Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Parent = require("../Models/parentsModel");
+require("dotenv").config();
 
 router.post("/registerParent", async (req, res) => {
     try {
@@ -44,5 +45,37 @@ router.post("/registerParent", async (req, res) => {
         res.status(500).json({ error: err.message });
       }
      });
+
+
+     router.post("/login", async (req, res) => {
+        try {
+          const { email, password } = req.body;
+      
+          // validate
+          if (!email || !password)
+            return res.status(400).json({ msg: "Not all fields have been entered." });
+      
+          const parent = await Parent.findOne({ email: email });
+          if (!parent)
+            return res
+              .status(400)
+              .json({ msg: "No account with this email has been registered." });
+      
+          const isMatch = await bcrypt.compare(password, parent.password);
+          if (!isMatch) return res.status(400).json({ msg: "Invalid credentials." });
+      
+          const token = jwt.sign({ id: parent._id }, process.env.JWT_SECRET);
+          res.json({
+            token,
+            parent: {
+              id: parent._id,
+              firstName: parent.firstName,
+              lastName: parent.lastName
+            },
+          });
+        } catch (err) {
+          res.status(500).json({ error: err.message });
+        }
+      });
 
 module.exports = router;
