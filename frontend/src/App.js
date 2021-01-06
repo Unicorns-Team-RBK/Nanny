@@ -8,19 +8,14 @@
 
 // import ForParent from './Components/ForParents/ForParents'
 // import ForNannies from './Components/ForNannies/ForNannies'
-import ParentsForm from './Components/ForParents/ParentsForm'
+// import ParentsForm from './Components/ForParents/ParentsForm'
 // import NanniesForm from './Components/ForNannies/NanniesForm'
 //import NanniesAccount from './Components/ForNannies/NanniesAccount'
 //import ParentsAccount from './Components/ForParents/ParentsAccount'
+import Login from './Components/Login'
 
 export default function App() {
 
-
-
-
-
-
-
     
-    return <ParentsForm />
+    return <Login />
 }
