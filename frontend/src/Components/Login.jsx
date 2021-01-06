@@ -1,4 +1,5 @@
 export default function Login () {
+  return (
   <div>
     <div className="page">
       <h2>Log in</h2>
@@ -19,4 +20,5 @@ export default function Login () {
       </form>
     </div>
     </div>
+  )
 }
