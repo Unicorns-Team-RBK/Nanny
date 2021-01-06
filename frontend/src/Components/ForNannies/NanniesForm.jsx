@@ -1,8 +1,23 @@
+import React, { useState, useContext } from "react";
+import { useHistory } from "react-router-dom";
 export default function NanniesForm  () {
-    return (
+  const [displayFirstName, setDisplayFirstName] = useState();
+  const [displayLastName, setDisplayLastName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [passwordCheck, setPasswordCheck] = useState();
+  // const [error, setError] = useState();
+  
+  const history = useHistory();
+  
+  
+  
+  
+  
+  return (
         <div className="page">
         <h2>NANNIES FORM </h2>
-        <form className="form" >
+        <form className="form">
         <label htmlFor="register-display-name">First Name</label>
           <input
             id="register-display-name"
@@ -38,6 +53,6 @@ export default function NanniesForm  () {
         </form>
           </div>
        
-    )
+    );
 }
 
