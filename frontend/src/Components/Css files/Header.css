@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f084c6;
+    background-color: #f39cd2;
   
 }
 .navbar{
@@ -36,14 +36,14 @@ nav ul li {
 }
 a{
     text-decoration: none;
-    color:#9A1890;
+    color:#5e0957;
 }
 .logo {
-    widows: 80px;
+    widows: 150px;
     height: auto;
     float: left;
-    width: 150px;
+    width: 200px;
     margin-top:1;
-    margin-right: 30%;
+    margin-right: 50%;
 
 }
