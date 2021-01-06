@@ -1,7 +1,8 @@
 import '../Components/Css files/Header.css'
-function Header () {
+
+export default function Header () {
     return (
-      <header>
+      <header id="header">
         <img class="logo" src="https://www.logodesign.net/logo-new/nanny-with-baby-carriage-8236ld.png?size=1" alt="logo"></img>
       <nav>
         <ul>
@@ -16,4 +17,3 @@ function Header () {
     );
   }
   
-  export default Header ;

@@ -7,6 +7,12 @@ header {
     background-color:white;
     background-size: cover ; 
     background-position: center;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f084c6;
+  
 }
 .navbar{
     display: flex;
