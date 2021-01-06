@@ -9,8 +9,8 @@ import Login from './Components/Login'
 
 import ForParent from './Components/ForParents/ForParents'
 import ForNannies from './Components/ForNannies/ForNannies'
-import ParentsForm from './Components/ForParents/ParentsForm'
-import NanniesForm from './Components/ForNannies/NanniesForm'
+import ParentsForm from './Components/ForParents/RegisterParent'
+import NanniesForm from './Components/ForNannies/RegisterNanny'
 import NanniesAccount from './Components/ForNannies/NanniesAccount'
 import ParentsAccount from './Components/ForParents/ParentsAccount'
 
