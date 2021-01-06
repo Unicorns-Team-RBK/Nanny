@@ -1,6 +1,6 @@
 
-//this 'Nannyinfos' array of objects conatins example of informations of some nannies profiles.
-var Nannyinfos = [
+//this 'nannyInfos' array of objects conatins example of informations of some nannies profiles.
+var nannyInfos = [
     { FirstName:"Carina",
         LastName:"Williams",
         email:"carina_williams@yahoo.com",
@@ -38,3 +38,5 @@ var Nannyinfos = [
     },
     
 ]
+ 
+export default nannyInfos;

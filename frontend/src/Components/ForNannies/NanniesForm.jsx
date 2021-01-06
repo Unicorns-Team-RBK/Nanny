@@ -45,8 +45,18 @@ export default function NanniesForm  () {
             <h5>Tell us something about yourself</h5>
             <textarea id="about_nanny" placeholder="what are you good at ?why a parent will prefer you over other nannies ?" rows="10" cols="150" name="aboutnany"></textarea>
             </div>
+<<<<<<< HEAD
+            <div class="wrap">
+            <div class="row">
+				<div class="columns text-center">
+					<input class="btn submit" type="submit" value="Submit Application"></input>
+				</div>
+			</div>
+            </div>
+=======
           
           <input type="submit" value="Register" />
+>>>>>>> a5eac5f2ba50745981366edabb38b01f859e6ef1
         </form>
           </div>
        
