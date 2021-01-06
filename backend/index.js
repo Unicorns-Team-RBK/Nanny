@@ -17,6 +17,7 @@ app.listen(PORT, () => console.log (`Listening on port : ${PORT}`))
 mongoose.connect(process.env.MONGODB_CONNECTION_STRING, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
+  useCreateIndex: true,
 });
 
 var db = mongoose.connection;
@@ -29,6 +30,7 @@ db.on('error', function(error) {
   console.log(error)
 });
 
-
+app.use('/parent', require('./routes/parentRouter'));
+app.use('/nanny', require('./routes/nannyRouter'))
 
   
