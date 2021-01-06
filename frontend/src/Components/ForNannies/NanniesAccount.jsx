@@ -1,8 +1,5 @@
-
 import React from 'react';
-
-
-const NanniesAccount = (props) => (         
+export default  NanniesAccount = (props) => (         
       <div className="account">
           <ul>
           {props.nannyInfos.map((info,index )=> {
@@ -34,4 +31,3 @@ const NanniesAccount = (props) => (
   
 
 
-export default NanniesAccount;

@@ -1,7 +1,5 @@
 import React from 'react';
-
-
-const ParentsAccount = (props) => (         
+export default ParentsAccount = (props) => (         
       <div className="account">
           <ul>
           {props.parentInfos.map((parentinfo,index )=> {
@@ -28,6 +26,3 @@ const ParentsAccount = (props) => (
         
 );
   
-
-
-export default ParentsAccount;
