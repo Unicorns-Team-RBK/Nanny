@@ -1,9 +1,3 @@
-//here is the form 'NanniesForm' that a nanny will fill when signing up. these inputs require her first name ,
-//her last name ,her email address ,her phone number and her password .Then she can add some informations
-//about herself for example her experiences , what she likes what she's good at why a parent will prefer her 
-//over other nanies .
-
-
 var NanniesForm = function () {
     return (
         <form>

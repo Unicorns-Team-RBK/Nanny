@@ -1,5 +1,5 @@
-import '../Components/Css files/Navbar1.css'
-function Navbar1() {
+import '../Components/Css files/Header.css'
+function Header () {
     return (
       <header>
         <img class="logo" src="https://www.logodesign.net/logo-new/nanny-with-baby-carriage-8236ld.png?size=1" alt="logo"></img>
@@ -16,4 +16,4 @@ function Navbar1() {
     );
   }
   
-  export default Navbar1;
+  export default Header ;
