@@ -1,6 +1,6 @@
 function ForParent() {
     return (
-   
+   <div>
       <div className="part1">
 		   <p >For Families</p>
         <h1>
@@ -12,7 +12,7 @@ function ForParent() {
          <div class="image">
             <img src="https://previews.123rf.com/images/asife/asife1307/asife130700042/21143708-cute-baby-girl-playing-with-leaves-in-autumn.jpg"></img>
           </div>
-      
+      </div>
 
       <div className="part2">
       <h2>OUR SCREENING PROCESS</h2>

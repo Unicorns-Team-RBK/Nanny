@@ -1,61 +1,51 @@
-//here is the form 'NanniesForm' that a nanny will fill when signing up. these inputs require her first name ,
-//her last name ,her email address ,her phone number and her password .Then she can add some informations
-//about herself for example her experiences , what she likes what she's good at why a parent will prefer her 
-//over other nanies .
+import React, { useState} from "react";
 
+export default function NanniesForm  () {
+  const [displayFirstName, setDisplayFirstName] = useState();
+  const [displayLastName, setDisplayLastName] = useState();
+  const [email, setEmail] = useState();
+  const [password, setPassword] = useState();
+  const [passwordCheck, setPasswordCheck] = useState();
 
-var NanniesForm = function () {
-    return (
-        <form>
-            <div class="wrap">
-
-                <div class="row">
-                    <div class="columns text-center">
-                        <h5>Nanny's Information</h5>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="columns special">
-                        <input class="required" placeholder="First Name*" name="first_name" type="text"></input>
-                    </div>
-                    <div class="columns">
-                        <input class="required" placeholder="Last Name*" name="last_name" type="text"></input>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="columns">
-                        <input id="email" class="required email" placeholder="E-mail Address*" name="email_address" type="email"></input>
-                    </div>
-                    <div class="columns">
-                        <input id="phone" class="required" placeholder="Phone Number*" name="phone" type="text"></input>
-                    </div>
-                </div>
+  return (
+        <div className="page">
+        <h2>NANNIES FORM </h2>
+        <form className="form">
+        <label htmlFor="register-display-name">First Name</label>
+          <input
+            id="register-display-name"
+            type="text"
+            onChange={(e) => setDisplayFirstName(e.target.value)}
+          />
+           <label htmlFor="register-display-name">Last name</label>
+          <input
+            id="register-display-name"
+            type="text"
+            onChange={(e) => setDisplayLastName(e.target.value)}
+          />
+          <label htmlFor="register-email">Email</label>
+          <input
+            id="register-email"
+            type="email"
+            onChange={(e) => setEmail(e.target.value)}
+          />
+          <label htmlFor="register-password">Password</label>
+          <input
+            id="register-password"
+            type="password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
+          <input
+            type="password"
+            placeholder="Verify password"
+            onChange={(e) => setPasswordCheck(e.target.value)}
+          />
+ 
+           <div className="columns text-center">
+            <h5>Tell us something about yourself</h5>
+            <textarea id="about_nanny" placeholder="what are you good at ?why a parent will prefer you over other nannies ?" rows="10" cols="150" name="aboutnany"></textarea>
             </div>
-
-            <div class="wrap">
-                <div class="row">
-                    <div class="columns text-center">
-                        <h5>Write your password</h5>
-                    </div>
-                    <div class="columns">
-                        <input id="password" class="required" placeholder="your password*" name="password" type="password"></input>
-                    </div>
-                </div>
-            </div>
-
-            <div class="wrap">
-                <div class="row">
-                    <div class="columns text-center">
-                        <h5>Tell us something about yourself</h5>
-
-                    </div>
-                    <div class="columns">
-                        <textarea id="about_nanny" class="not required" placeholder="what are you good at ?why a parent will prefer you over other nannies ?" rows="10" cols="150" name="aboutnany"></textarea>
-                    </div>
-                </div>
-            </div>
+<<<<<<< HEAD
             <div class="wrap">
             <div class="row">
 				<div class="columns text-center">
@@ -63,8 +53,13 @@ var NanniesForm = function () {
 				</div>
 			</div>
             </div>
+=======
+          
+          <input type="submit" value="Register" />
+>>>>>>> a5eac5f2ba50745981366edabb38b01f859e6ef1
         </form>
-    )
+          </div>
+       
+    );
 }
 
-export default NanniesForm;

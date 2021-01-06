@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import App from './App'
 import './index.css';
 
+<<<<<<< HEAD
 //IMPORTING ALL THE COMPONENTS 
 // import Navbar from './Components/Navbar'
 import Homepage from './Components/HomePage'
@@ -13,10 +15,12 @@ import Homepage from './Components/HomePage'
 //import ParentsForm from './Components/ForParents/ParentsForm'
 //import parentInfos from './parentInfos' 
 //import ParentsAccount from './Components/ForParents/ParentsAccount'
+=======
+>>>>>>> a5eac5f2ba50745981366edabb38b01f859e6ef1
 
 
 ReactDOM.render(
-  <Homepage />,
+  <App />,
   document.getElementById('root')
 );
 
