@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 const Parent = require("../Models/parentsModel");
 require("dotenv").config();
 
-router.post("/registerParent", async (req, res) => {
+router.post("/RegisterParent", async (req, res) => {
     try {
       const { firstName, lastName, email, password, passwordCheck} = req.body;
   

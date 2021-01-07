@@ -11,7 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #f39cd2;
+    /* background-color: #f39cd2; */
   
 }
 .navbar{
@@ -36,7 +36,7 @@ nav ul li {
 }
 a{
     text-decoration: none;
-    color:#5e0957;
+    /* color:#5e0957; */
 }
 .logo {
     widows: 150px;
