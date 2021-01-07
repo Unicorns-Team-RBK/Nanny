@@ -1,7 +1,7 @@
 /*todelete*/
 import React, { useState} from "react";
 import "../Css files/NanniesForm.css"
-export default function NanniesForm  () {
+export default function RegisterNannies  () {
   const [displayFirstName, setDisplayFirstName] = useState();
   const [displayLastName, setDisplayLastName] = useState();
   const [email, setEmail] = useState();
