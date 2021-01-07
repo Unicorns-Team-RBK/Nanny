@@ -25,7 +25,7 @@ return (
           <Switch>
             <Route exact path="/" component={Homepage} />
             <Route exact path="/Homepage" component={Homepage} />
-            <Route path="/ForParent" component={ForParent} />
+            <Route path="/ForParents" component={ForParents} />
             <Route path="/ForNannies" component={ForNannies} />
             <Route path="/RegisterParent" component={RegisterParent} />
             <Route path="/RegisterNannies" component={RegisterNannies} />
