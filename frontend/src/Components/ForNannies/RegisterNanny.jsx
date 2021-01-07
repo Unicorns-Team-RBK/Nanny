@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 
-export default function NanniesForm  () {
+export default function RegisterNannies () {
   const [displayFirstName, setDisplayFirstName] = useState();
   const [displayLastName, setDisplayLastName] = useState();
   const [email, setEmail] = useState();
