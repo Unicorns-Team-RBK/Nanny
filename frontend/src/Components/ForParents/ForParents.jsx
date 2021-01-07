@@ -1,3 +1,4 @@
+import "../Css files/ForParents.css"
 function ForParent() {
     return (
    <div>
