@@ -1,4 +1,14 @@
+import React from "react";
+import { useHistory } from "react-router-dom";
+
+
 function HomePage() {
+
+const history = useHistory();
+const startsearch = () => history.push("/RegisterParent");
+const fornanies = () => history.push("/ForNannies");
+const forparent = () => history.push("/ForParents");
+
     return (
     <div>
         <div className="part1">
@@ -7,8 +17,8 @@ function HomePage() {
         </div>
         <h1>Supporting Families with Trusted &amp; Vetted Child Care</h1>
 				<p className="sub-title">Exceptional Nannies for Exceptional Families.</p>
-        <button className="btn">For Parents</button>
-        <button className="btn">For Nannies</button>
+        <button className="btn" onClick={forparent}>For Parents</button>
+        <button className="btn" onClick={fornanies}>For Nannies</button>
         </div>
 
     
@@ -23,7 +33,7 @@ function HomePage() {
           with children is an opportunity to show love, support, patience, and understanding. Our emphasis on smart and engaged child care, transparent and open communication, 
           and 365 day a year parent and nanny support sets us apart from other nanny agencies. If you’re serious about finding a nanny, let us help. We’ll take care of the 
           time-consuming logistics and help you focus on what matters most for your family.</p>
-				<button className="btn">Start Your Search</button>
+				<button className="btn" onClick={startsearch}>Start Your Search</button>
 			</div> 
       <div className="part3" >
           <div class="image">
