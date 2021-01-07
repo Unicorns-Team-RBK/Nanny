@@ -1,3 +1,4 @@
+import "../Css files/ParentsAccount.css"
 // import React from 'react';
 // export default ParentsAccount = (props) => (         
 //       <div className="account">
