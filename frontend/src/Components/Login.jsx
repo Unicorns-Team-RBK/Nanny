@@ -19,6 +19,13 @@ export default function Login () {
         <input type="submit" value="Log in" />
       </form>
     </div>
+    <div class="notice">
+    <p>
+      Not a member?
+      <br>
+      Sign up as a <a href="localhost:3000/ParentsForm">Parent</a> or <a href="localhost:3000/NanniesForm">Sitter</a>
+      </br></p>
+    </div>
     </div>
   )
 }
