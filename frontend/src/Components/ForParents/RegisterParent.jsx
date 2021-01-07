@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../Css files/ParentsForm.css"
 
-import React, { useState} from "react";
+
 export default function RegisterParent () {
   const [displayFirstName, setDisplayFirstName] = useState();
   const [displayLastName, setDisplayLastName] = useState();
