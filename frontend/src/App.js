@@ -9,10 +9,12 @@ import Login from './Components/Login'
 
 import ForParent from './Components/ForParents/ForParents'
 import ForNannies from './Components/ForNannies/ForNannies'
-import ParentsForm from './Components/ForParents/RegisterParent'
-import NanniesForm from './Components/ForNannies/RegisterNanny'
-import NanniesAccount from './Components/ForNannies/NanniesAccount'
-import ParentsAccount from './Components/ForParents/ParentsAccount'
+import RegisterParent from './Components/ForParents/RegisterParent'
+import RegisterNannies from './Components/ForNannies/RegisterNanny'
+
+
+
+// import ParentsAccount from './Components/ForParents/ParentsAccount'
 
 export default function App() {
 return (
@@ -25,10 +27,8 @@ return (
             <Route exact path="/Homepage" component={Homepage} />
             <Route path="/ForParent" component={ForParent} />
             <Route path="/ForNannies" component={ForNannies} />
-            <Route path="/ParentsForm" component={ParentsForm} />
-            <Route path="/NanniesForm" component={NanniesForm} />
-            {/* <Route path="/NanniesAccount" component={NanniesAccount} />
-            <Route path="/ParentsAccount" component={ParentsAccount} /> */}
+            <Route path="/RegisterParent" component={RegisterParent} />
+            <Route path="/RegisterNannies" component={RegisterNannies} />
             <Route path="/login" component={Login} />
           </Switch>
         </div>
