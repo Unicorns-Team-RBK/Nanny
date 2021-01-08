@@ -20,8 +20,8 @@ export default function RegisterParent () {
     
     try{
        const newParent = {firstName, lastName, email, password, passwordCheck};
-       console.log(newParent)
-      await Axios.post("http://localhost:5000/parent/RegisterParent", newParent);
+       await Axios.post("http://localhost:5000/parent/RegisterParent", newParent);
+       
       const loginRes = await Axios.post("http://localhost:5000/parent/login", {email, password});
       setParentData({
         token : loginRes.data.token,
