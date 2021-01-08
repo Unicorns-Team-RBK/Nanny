@@ -64,7 +64,7 @@ function ForParents() {
   <p>When we meet with nannies , we’re looking for a lot more than just standard qualifications. In fact, our recruitment directors won’t lower their standards to meet demand. We'll hand select our top candidates for your family, and we stand behind every candidate that we present. We think they’re all pretty special.
    All of the Nannies on our site have completed our six step screening process. Click below to view individual biographies of our selective group of Nannies.</p>
    <div class="image">
-            <img src="https://d2rgzcku886wi.cloudfront.net/images/babysitter-in-park-with-child.jpg"></img>
+      <img src="https://d2rgzcku886wi.cloudfront.net/images/babysitter-in-park-with-child.jpg"></img>
     </div>
   <button className="btn" >View Nannies Bios</button>
 
