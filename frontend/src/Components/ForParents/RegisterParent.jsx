@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import Axios from "axios";
 import ParentContext from "../../ParentContext";
+import ErrorNotice from "../ErrorNotice";
 import "../Css files/ParentsForm.css"
 
 
@@ -11,6 +12,7 @@ export default function RegisterParent () {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [passwordCheck, setPasswordCheck] = useState();
+  const [error, setError] = useState();
 
   const { setParentData } = useContext(ParentContext)
   const history = useHistory()
@@ -29,9 +31,9 @@ export default function RegisterParent () {
       });
       localStorage.setItem("auth-token", loginRes.data.token);
       history.push('/')
-      
+
      } catch (err) {
-      console.log("ERROR", err)
+      err.response.data.msg && setError(err.response.data.msg)
     }
   }
 
@@ -40,8 +42,10 @@ export default function RegisterParent () {
       <h2>WELCOME TO MY GOOD NANNY</h2>
       <h4>Parents: create your account </h4>
 
-      <p className="registration__info">Already have an account? <a href="http://localhost:3000/login">Log in</a>.</p>
 
+      <p className="registration__info">Already have an account? <a href="http://localhost:3000/login">Log in</a>.</p>
+      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
+        
       <form className="form" onSubmit = {submit} >
 
         <label htmlFor="register-display-name">First Name</label>
