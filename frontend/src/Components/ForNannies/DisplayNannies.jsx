@@ -1,6 +1,7 @@
 import React from 'react';
 import nannyInfos from '../../../../backend/Models/nanny_profileinfos'
 
+
 import ProfileNanny from './NannyProfile'
 
 function NanniesAccount  () {
@@ -17,8 +18,8 @@ function NanniesAccount  () {
     {this.state.nannyInfos.map((info,index )=> (
       <li key={index} className="profile">
         <img className="Image" src={info.Profile_picture} />
-        <span className= "name" >{props.nannyInfo.FirstName}</span>
-        <span className= "name">{props.nannyInfo.LastName}</span>
+        <span className= "name" >{this.state.nannyInfo.FirstName}</span>
+        <span className= "name">{this.state.nannyInfo.LastName}</span>
         <button onClick={ProfileNanny}>More Information</button>
       </li>
     )
@@ -29,5 +30,6 @@ function NanniesAccount  () {
 }      
  
 export default  NanniesAccount
+
 
 

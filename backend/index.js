@@ -35,4 +35,4 @@ app.use('/nanny', require('./routes/nannyRouter'));
 
 module.exports.db = db
 
-  
+module.exports.db = db  
