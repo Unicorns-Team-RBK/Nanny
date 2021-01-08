@@ -31,6 +31,8 @@ db.on('error', function(error) {
 });
 
 app.use('/parent', require('./routes/parentRouter'));
-app.use('/nanny', require('./routes/nannyRouter'))
+app.use('/nanny', require('./routes/nannyRouter'));
+
+module.exports.db = db
 
   

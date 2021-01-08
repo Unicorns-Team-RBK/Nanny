@@ -2,7 +2,7 @@ import React from 'react';
 import nannyInfos from '../../../../backend/Models/nanny_profileinfos'
 
 export default  NanniesAccount = () => (         
-      <div className="displaynannies">
+      <div className="displaynannnies">
           <ul>
           {nannyInfos.map((info,index )=> {
             return (
@@ -18,6 +18,7 @@ export default  NanniesAccount = () => (
                   <option>part time
                       <option>Morning</option>
                       <option>Afternoon</option>
+                      <option>Evening</option>
                       <option>Night</option>
                   </option>
               </select>
