@@ -3,7 +3,7 @@ const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const Nanny = require("../Models/nannyModel");
 
-router.post("/registerNanny", async (req, res) => {
+router.post("/RegisterNanny", async (req, res) => {
     try {
       const { firstName, lastName, email, password, passwordCheck} = req.body;
   
