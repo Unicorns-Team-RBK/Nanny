@@ -1,5 +1,11 @@
 import "../Css files/ForParents.css"
+import { useHistory } from "react-router-dom";
+
 function ForParents() {
+  const history = useHistory();
+  const startsearch = () => history.push("/RegisterParent");
+  
+
     return (
    <div>
       <div className="part1">
@@ -9,7 +15,7 @@ function ForParents() {
             we uphold the highest standards of integrity, safety, and scrutiny in selecting the very best 
             nannies to care for your children.
         </h1>
-        <button>Fill out a Family Application</button>
+        <button onClick={startsearch} >Fill out a Family Application</button>
          <div class="image">
             <img src="https://previews.123rf.com/images/asife/asife1307/asife130700042/21143708-cute-baby-girl-playing-with-leaves-in-autumn.jpg"></img>
           </div>
@@ -36,7 +42,7 @@ function ForParents() {
     <h4>Part-time Child Care</h4>
     <p>For families looking for dedicated, active, and engaging individuals for regularly scheduled part-time and after-school care, full days, weekends, mornings, afternoons, or evenings.</p>
     </div>
-    <button className="btn" >Fill out Family Application </button>
+    <button className="btn" onClick={startsearch} >Fill out Family Application </button>
 
   
   <div className="part4">
@@ -69,7 +75,7 @@ function ForParents() {
          
 					<h4>Are you looking for a nanny or a babysitter?</h4>
           <p>Fill Out a Family Application to Get Started</p>
-          <button  className="btn" >Start Now</button>
+          <button  className="btn" onClick={startsearch} >Start Now</button>
     </div>
   </div>
 
