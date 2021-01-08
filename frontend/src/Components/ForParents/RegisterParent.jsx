@@ -22,8 +22,8 @@ export default function RegisterParent () {
     
     try{
        const newParent = {firstName, lastName, email, password, passwordCheck};
-       console.log(newParent)
-      await Axios.post("http://localhost:5000/parent/RegisterParent", newParent);
+       await Axios.post("http://localhost:5000/parent/RegisterParent", newParent);
+       
       const loginRes = await Axios.post("http://localhost:5000/parent/login", {email, password});
       setParentData({
         token : loginRes.data.token,
@@ -42,8 +42,10 @@ export default function RegisterParent () {
       <h2>WELCOME TO MY GOOD NANNY</h2>
       <h4>Parents: create your account </h4>
 
-      <p className="registration__info">Already have an account? <a href="#">Log in</a>.</p>
+
+      <p className="registration__info">Already have an account? <a href="http://localhost:3000/login">Log in</a>.</p>
       {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
+        
       <form className="form" onSubmit = {submit} >
 
         <label htmlFor="register-display-name">First Name</label>

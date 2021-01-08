@@ -13,7 +13,7 @@ const forparent = () => history.push("/ForParents");
     <div>
         <div className="part1">
         <div class="image">
-          <img src="https://previews.123rf.com/images/stokkete/stokkete1410/stokkete141000543/32580531-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img>
+          {/* <img src="https://previews.123rf.com/images/stokkete/stokkete1410/stokkete141000543/32580531-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img> */}
         </div>
         <h1>Supporting Families with Trusted &amp; Vetted Child Care</h1>
 				<p className="sub-title">Exceptional Nannies for Exceptional Families.</p>

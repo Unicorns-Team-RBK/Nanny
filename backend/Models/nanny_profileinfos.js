@@ -7,7 +7,7 @@ var nannyInfos = [
         email:"carina_williams@yahoo.com",
         phone_number:"+16102388183",
         about: "I have over 20 years of childcare experience with families in France and the UK.I have cared for children of all ages - from newborn babies up to 11 years old.I'm very capable and competent nanny; very caring, attentive to details and dedicated to my career.I'm an artistic person with a passion for art and i also like travelling.I'm an excellent cook. I'm a well-presented lady with cheerful attitude and i speak French and English.", 
-
+        
     },
     {   Profile_picture:"https://i.pinimg.com/736x/0f/b7/42/0fb742a48bb702427fcf567dfef4dcd3--profile-pictures-head-shots.jpg",
         FirstName:"Merry",
