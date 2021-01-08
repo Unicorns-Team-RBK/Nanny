@@ -9,10 +9,7 @@ const nannySchema = new mongoose.Schema({
   region :  String,
   avaibility : {
     day :  String,
-    time : {
-        part_time : String,
-        full_time : String
-    }
+    time : String,     
   },
   about: String
   

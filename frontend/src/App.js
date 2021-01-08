@@ -12,6 +12,7 @@ import ForParents from './Components/ForParents/ForParents'
 import ForNannies from './Components/ForNannies/ForNannies'
 import RegisterParent from './Components/ForParents/RegisterParent'
 import RegisterNannies from './Components/ForNannies/RegisterNanny'
+import NanniesAccount from './Components/ForNannies/DisplayNannies'
 
 
 
@@ -64,6 +65,8 @@ export default function App() {
               <Route path="/RegisterParent" component={RegisterParent} />
               <Route path="/RegisterNannies" component={RegisterNannies} />
               <Route path="/login" component={Login} />
+              <Route path="/displaynannies" component={NanniesAccount} />
+
             </Switch>
           </div>
         </ParentContext.Provider>
