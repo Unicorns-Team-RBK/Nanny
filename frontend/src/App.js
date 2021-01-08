@@ -8,7 +8,7 @@ import Header  from './Components/Header'
 import Homepage from './Components/HomePage'
 import Login from './Components/Login'
 
-import ForParent from './Components/ForParents/ForParents'
+import ForParents from './Components/ForParents/ForParents'
 import ForNannies from './Components/ForNannies/ForNannies'
 import RegisterParent from './Components/ForParents/RegisterParent'
 import RegisterNannies from './Components/ForNannies/RegisterNanny'
@@ -18,6 +18,7 @@ import RegisterNannies from './Components/ForNannies/RegisterNanny'
 // import ParentsAccount from './Components/ForParents/ParentsAccount'
 
 export default function App() {
+
   const [parentData, setParentData] = useState ({
     token : undefined,
     parent : undefined
@@ -69,4 +70,5 @@ export default function App() {
       </BrowserRouter>
     </>
   );
+
 }

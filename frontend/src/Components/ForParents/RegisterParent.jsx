@@ -39,9 +39,11 @@ export default function RegisterParent () {
     <div className="page">
       <h2>WELCOME TO MY GOOD NANNY</h2>
       <h4>Parents: create your account </h4>
+
       <p className="registration__info">Already have an account? <a href="#">Log in</a>.</p>
 
       <form className="form" onSubmit = {submit} >
+
         <label htmlFor="register-display-name">First Name</label>
         <div>
           <input
