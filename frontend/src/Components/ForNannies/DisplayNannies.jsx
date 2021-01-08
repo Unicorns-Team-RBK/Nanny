@@ -9,7 +9,7 @@ export default  NanniesAccount = () => (
               
             <li key={index} className="profile">
               <div className="info" >{info.FirstName}</div>
-              <div className="info" >{info.lastName}</div>
+              <div className="info" >{info.LastName}</div>
               <div className="info" >{info.email}</div>
               <div className="info" >{info.number}</div>
               <div className="info" >{info.about}</div>
