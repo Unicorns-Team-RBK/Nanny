@@ -1,11 +1,22 @@
 const mongoose = require("mongoose");
 
 const nannySchema = new mongoose.Schema({
-  firstName: { type: String },
-  lastName: { type: String },
-  email: { type: String, required: true, unique: true },
-  password: { type: String, required: true, minlength: 6 },
+  Profile_picture: String,
+  FirstName:  String,
+  LastName:  String,
+  email:  String,
+  phone_number: String,
+  region :  String,
+  avaibility : {
+    day :  String,
+    time : {
+        part_time : String,
+        full_time : String
+    }
+  },
+  about: String
   
 });
+const Nanny = mongoose.model("nanny", nannySchema);
 
-module.exports = Nanny = mongoose.model("nanny", nannySchema);
+module.exports = Nanny
