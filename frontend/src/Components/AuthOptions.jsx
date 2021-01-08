@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-export default function AuthOptions() {
+import ParentContext from "../ParentContext"
 
+export default function AuthOptions() {
+const {parentData, setParentData} = useContext(ParentContext)
 const history = useHistory();
 
 const RegisterParent = () => history.push("/RegisterParent");
 const login = () => history.push("/login");
+const logout = () => {
+  setParentData({
+    token : undefined,
+    parent : undefined
+  })
+  localStorage.setItem( "auth-token", "")
+}
 
   return (
     <nav className="auth-options">
-    <button onClick={RegisterParent}>Register</button>
-    <button onClick={login}>Log in</button>
+      {
+        parentData.parent ? (
+          <button onClick={logout}>Log out</button>
+        ) : (
+          <>
+          <button onClick={RegisterParent}>Register</button>
+          <button onClick={login}>Log in</button>
+          </>
+        )
+      }
+    
     </nav>
   );
 }
