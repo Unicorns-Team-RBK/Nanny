@@ -1,20 +1,40 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
-import ParentContext from '../ParentContext'
+import ParentContext from "../ParentContext";
+import Axios from "axios";
 
 export default function Login () {
 
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-  const { setUserData } = useContext(ParentContext);
+  const { setParentData } = useContext(ParentContext);
   const history = useHistory();
+
+  const submit = async (e) => {
+    e.preventDefault();
+    
+    try{
+       const loginParent = {email, password};
+       
+      const loginRes = await Axios.post("http://localhost:5000/parent/login", loginParent);
+      setParentData({
+        token : loginRes.data.token,
+        parent : loginRes.data.parent,
+      });
+      localStorage.setItem("auth-token", loginRes.data.token);
+      history.push('/')
+
+     } catch (err) {
+      console.log("ERROR", err)
+    }
+  }
 
   return (
   <div>
     <div className="page">
       <h2>Log in</h2>
-      <form className="form">
+      <form className="form" onSubmit = {submit} >
         <div>
         <label htmlFor="login-email">Email</label>
 </div>
