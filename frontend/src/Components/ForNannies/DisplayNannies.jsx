@@ -17,22 +17,17 @@ function NanniesAccount  () {
     {this.state.nannyInfos.map((info,index )=> (
       <li key={index} className="profile">
         <img className="Image" src={info.Profile_picture} />
-        <div className="Name" >{info.FirstName}</div>
-        <div className="Name" >{info.LastName}</div>
+        <span className= "name" >{props.nannyInfo.FirstName}</span>
+        <span className= "name">{props.nannyInfo.LastName}</span>
         <button onClick={ProfileNanny}>More Information</button>
-       
-     
       </li>
     )
     )}
-      </ul>
+    </ul>
   </div>
   )
 }      
  
- 
-        
-
 export default  NanniesAccount
 
 
