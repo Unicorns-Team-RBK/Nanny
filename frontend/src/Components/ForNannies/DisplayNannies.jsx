@@ -1,36 +1,35 @@
 import React from 'react';
 import nannyInfos from '../../../../backend/Models/nanny_profileinfos'
 
-export default  NanniesAccount = () => (         
-      <div className="displaynannnies">
-          <ul>
-          {nannyInfos.map((info,index )=> {
-            return (
-              
-            <li key={index} className="profile">
-              <div className="info" >{info.FirstName}</div>
-              <div className="info" >{info.LastName}</div>
-              <div className="info" >{info.email}</div>
-              <div className="info" >{info.number}</div>
-              <div className="info" >{info.about}</div>
-              <select>
-                  <option>full time</option>
-                  <option>part time
-                      <option>Morning</option>
-                      <option>Afternoon</option>
-                      <option>Evening</option>
-                      <option>Night</option>
-                  </option>
-              </select>
-            </li>
-           )
-           
-          
-          })}
-            </ul>
-        </div>
-        
-);
-  
+
+import ProfileNanny from './NannyProfile'
+
+function NanniesAccount  () {
+  constructor(props) 
+    super(props);
+    this.state = {
+      nannyInfos : nannyInfos
+    }
+
+ 
+  return (
+    <div className="displaynannies">
+    <ul>
+    {this.state.nannyInfos.map((info,index )=> (
+      <li key={index} className="profile">
+        <img className="Image" src={info.Profile_picture} />
+        <span className= "name" >{this.state.nannyInfo.FirstName}</span>
+        <span className= "name">{this.state.nannyInfo.LastName}</span>
+        <button onClick={ProfileNanny}>More Information</button>
+      </li>
+    )
+    )}
+    </ul>
+  </div>
+  )
+}      
+ 
+export default  NanniesAccount
+
 
 
