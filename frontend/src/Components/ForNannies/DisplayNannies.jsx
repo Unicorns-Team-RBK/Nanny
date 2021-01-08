@@ -1,9 +1,10 @@
 import React from 'react';
+import nannyInfos from '../../../../backend/Models/nanny_profileinfos'
 
-export default  NanniesAccount = (props) => (         
-      <div className="account">
+export default  NanniesAccount = () => (         
+      <div className="displaynannies">
           <ul>
-          {props.nannyInfos.map((info,index )=> {
+          {nannyInfos.map((info,index )=> {
             return (
               
             <li key={index} className="profile">
