@@ -63,7 +63,7 @@ function ForParents() {
   <button className="btn" >View Nannies Bios</button>
 
   <div className="part5">
-         <div class="image">
+         <div className="image">
             <img src="https://media.gettyimages.com/photos/smiling-mother-or-nanny-with-baby-girl-picture-id637854396"></img>
           </div>
          
