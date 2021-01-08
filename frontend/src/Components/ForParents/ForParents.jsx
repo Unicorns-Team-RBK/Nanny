@@ -1,5 +1,5 @@
 import "../Css files/ForParents.css"
-function ForParent() {
+function ForParents() {
     return (
    <div>
       <div className="part1">
@@ -77,4 +77,4 @@ function ForParent() {
     );
   }
   
-export default ForParent;
+export default ForParents;
