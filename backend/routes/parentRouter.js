@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
-const auth = require("../middleware/auth"); 
+const auth = require("../Middleware/auth"); 
 const Parent = require("../Models/parentsModel");
 require("dotenv").config();
  

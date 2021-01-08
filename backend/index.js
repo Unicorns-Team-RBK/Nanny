@@ -10,7 +10,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log (`Listening on port : ${PORT}`))
+app.listen(PORT, () => console.log (`listening on port ${PORT}and To get started, visit: http://localhost:5000`))
 
 
 //setup mangoose
