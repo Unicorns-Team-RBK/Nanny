@@ -2,6 +2,28 @@
     margin:0 ;
     padding:0;
 }
-.image{
-    size:51px;
+#imageLeft{
+    margin-left: 50%;
+}
+body{
+    background-color :rgb(241, 234, 241);
+}
+.partone{
+margin-left:42% ;
+}
+
+#exceptional{
+    margin-left:1% ;
+}
+#forpar{
+    margin-left: 7%;
+}
+#fornan{
+    margin-left:4% ;
+}
+
+#title{
+    margin-left: 14%;
+    font-size: 270%;
+    color: crimson;
 }

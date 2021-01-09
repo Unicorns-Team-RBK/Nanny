@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import ParentContext from "../ParentContext";
-
+import "../Components/Css files/HomePage.css"
 
 function HomePage() {
 const {parentData} = useContext(ParentContext)
@@ -9,27 +9,19 @@ const history = useHistory();
 const startsearch = () => history.push("/RegisterParent");
 const fornanies = () => history.push("/ForNannies");
 const forparent = () => history.push("/ForParents");
-<<<<<<< HEAD
-const started = () => history.push("/RegisterParent");
-    return (
-    <div>
-        <div className="part1">
-        <div className="image">
-          <img src="https://previews.123rf.com/images/stokkete/stokkete1410/stokkete141000543/32580531-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img>
-=======
 const offers = () => history.push("/SearchNannies")
 
     return (
     <div>
-        <div className="part1">
-        <div class="image">
+        
+        <div className="image">
           {/* <img src="https://previews.123rf.com/images/stokkete/stokkete1410/stokkete141000543/32580531-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img> */}
->>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
         </div>
-        <h1>Supporting Families with Trusted &amp; Vetted Child Care</h1>
-				<p className="sub-title">Exceptional Nannies for Exceptional Families.</p>
-        <button className="btn" onClick={forparent}>For Parents</button>
-        <button className="btn" onClick={fornanies}>For Nannies</button>
+        <h1 id="title">Supporting Families with Trusted &amp; Vetted Child Care</h1>
+        <div className="partone">
+				<p id="exceptional"className="sub-title">Exceptional Nannies for Exceptional Families.</p>
+        <button id="forpar"className="btn" onClick={forparent}>For Parents</button>
+        <button id="fornan"className="btn" onClick={fornanies}>For Nannies</button>
         </div>
 
         {
@@ -39,7 +31,7 @@ const offers = () => history.push("/SearchNannies")
         }
 
 			<div className="part2" >
-        <div class="image">
+        <div className="imageCentreA">
           <img src="https://d2rgzcku886wi.cloudfront.net/images/little-girl-reading-a-book_v3.jpg"></img>
         </div>
 				<h2>A Unique Blend of Nannies and Education</h2>
@@ -52,7 +44,7 @@ const offers = () => history.push("/SearchNannies")
 				<button className="btn" onClick={startsearch}>Start Your Search</button>
 			</div> 
       <div className="part3" >
-          <div class="image">
+          <div className="imageCentreB">
               <img src="https://previews.123rf.com/images/stokkete/stokkete1409/stokkete140900173/31526941-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img>
           </div>
         <h3>Our Nanny Placement Process</h3>
@@ -64,15 +56,15 @@ const offers = () => history.push("/SearchNannies")
 				<p><span className="rouge">We give you</span> back the one resource that families are always short on: time.</p>
       </div>
       <div className="part3" >
-          <div class="image">
+          <div className="imageLeft">
             <img src="https://d2rgzcku886wi.cloudfront.net/images/new-york-nanny-in-park.jpg"></img>
           </div>
           <p >for families</p>
 					<h4>Date night? Tickets to Hamilton? Looking for a full time or part time nanny? </h4>
-          <button onClick={started}>Get Started</button>
+          <button onClick={startsearch}>Get Started</button>
 
 
-          <div class="image">
+          <div className="imageRight">
             <img src="https://d2rgzcku886wi.cloudfront.net/images/index-sitters.jpg"></img>
           </div>
           <p>FOR NANNIES</p>

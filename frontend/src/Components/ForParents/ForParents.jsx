@@ -1,17 +1,10 @@
 import "../Css files/ForParents.css"
 import { useHistory } from "react-router-dom";
-<<<<<<< HEAD
+
 function ForParents() {
   const history = useHistory();
 const nannybios = () => history.push("/SearchNannies");
 const familyapplication = () => history.push("/RegisterParent");
-=======
-
-function ForParents() {
-  const history = useHistory();
-  const startsearch = () => history.push("/RegisterParent");
-  
->>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
 
     return (
    <div>
@@ -22,11 +15,7 @@ function ForParents() {
             we uphold the highest standards of integrity, safety, and scrutiny in selecting the very best 
             nannies to care for your children.
         </h1>
-<<<<<<< HEAD
-        <button onClick={familyapplication}>Fill out a Family Application</button>
-=======
-        <button onClick={startsearch} >Fill out a Family Application</button>
->>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
+        <button onClick={familyapplication} >Fill out a Family Application</button>
          <div class="image">
             <img src="https://previews.123rf.com/images/asife/asife1307/asife130700042/21143708-cute-baby-girl-playing-with-leaves-in-autumn.jpg"></img>
           </div>
@@ -53,11 +42,7 @@ function ForParents() {
     <h4>Part-time Child Care</h4>
     <p>For families looking for dedicated, active, and engaging individuals for regularly scheduled part-time and after-school care, full days, weekends, mornings, afternoons, or evenings.</p>
     </div>
-<<<<<<< HEAD
     <button className="btn" onClick={familyapplication} >Fill out Family Application </button>
-=======
-    <button className="btn" onClick={startsearch} >Fill out Family Application </button>
->>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
 
   
   <div className="part4">
@@ -90,11 +75,7 @@ function ForParents() {
          
 					<h4>Are you looking for a nanny or a babysitter?</h4>
           <p>Fill Out a Family Application to Get Started</p>
-<<<<<<< HEAD
-          <button  className="btn" onClick={familyapplication}>Start Now</button>
-=======
-          <button  className="btn" onClick={startsearch} >Start Now</button>
->>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
+          <button  className="btn" onClick={familyapplication} >Start Now</button>
     </div>
   </div>
 

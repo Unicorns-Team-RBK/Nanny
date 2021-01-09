@@ -12,8 +12,8 @@ export default function Header () {
      </Link>
       <nav>
         <ul>
-            <li><a href="http://localhost:3000/ForParents"> FOR PARENTS </a></li>
-            <li><a href="http://localhost:3000/ForNannies"> FOR NANNIES </a></li>
+            <li id="forpar"><a href="http://localhost:3000/ForParents"> FOR PARENTS </a></li>
+            <li id="fornan"><a href="http://localhost:3000/ForNannies"> FOR NANNIES </a></li>
         </ul>
      </nav>
       <AuthOptions/>

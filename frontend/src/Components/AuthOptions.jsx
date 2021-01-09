@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import ParentContext from "../ParentContext"
+import ParentContext from "../ParentContext";
+import "../Components/Css files/AuthOptions.css";
 
 export default function AuthOptions() {
 const {parentData, setParentData} = useContext(ParentContext)
