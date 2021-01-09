@@ -5,7 +5,8 @@ const DisplayNannies =  (props)  =>{
   return (
     <div className="displaynannies">
     <ul>
-    {props.nannyInfos.map((info,index )=> (
+    {props.nannyInfos.map((info,index ) =>{
+      return (
       <li key={index} className="profile">
         <img className="Image" src={info.Profile_picture} />
         <span className= "name" >{info.FirstName}</span>
@@ -13,6 +14,7 @@ const DisplayNannies =  (props)  =>{
         <button onClick={() => props.handleClick(index)}> More Information </button>
       </li>
     )
+  }
     )}
     </ul>
   </div>

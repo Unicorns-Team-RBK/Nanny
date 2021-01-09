@@ -7,7 +7,7 @@ export default function Header () {
     return (
       <header id="header">
         <Link to="/">
-        <img class="logo" src="https://www.logodesign.net/logo-new/nanny-with-baby-carriage-8236ld.png?size=1" alt="logo"></img>
+        {/* <img class="logo" src="https://www.logodesign.net/logo-new/nanny-with-baby-carriage-8236ld.png?size=1" alt="logo"></img> */}
 
      </Link>
       <nav>
