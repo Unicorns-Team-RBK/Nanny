@@ -40,13 +40,14 @@ export default function RegisterParent () {
   return (
     <div className="page"> 
     
-      <h2 id="titleform">WELCOME TO MY GOOD NANNY</h2>
+      {/* <h2 id="titleform">WELCOME TO MY GOOD NANNY</h2> */}
       <div>
-      <h4 id="subtitleone">Parents: create your account </h4>
+      {/* <h4 id="subtitleone">Parents: create your account </h4> */}
 
-
+      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
      
       </div>  
+      
       <form className="form" onSubmit = {submit} >
           <div id="register">
         <label >First Name</label>
@@ -114,7 +115,7 @@ export default function RegisterParent () {
         </div>
       </form>
       <p id="subtitletwo">Already have an account? <a href="http://localhost:3000/login">Log in</a>.</p>
-      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
+      
     </div>
   )
 }
