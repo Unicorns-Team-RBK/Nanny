@@ -2,6 +2,7 @@ import React from 'react';
 import nannyInfos from '../../fakedatanannies'
 import DisplayNannies from './DisplayNannies';
 import NannyProfile from './NannyProfile'
+import axios from 'axios';
 
 class SearchNannies extends React.Component  {
     constructor(props) {
@@ -12,6 +13,23 @@ class SearchNannies extends React.Component  {
         currentNanny : {},
         }
     }
+
+    componentDidMount() {
+        axios.get('http://localhost:5000/parent/SearchNannies')
+          .then(response => {
+            console.log('Received data from server: ', response.data)
+            this.setState({
+              nannyInfos: response.data
+            })
+          })
+          .catch(error => {
+            console.error('Error fetching data from server: ', error)
+          })
+      }
+
+
+
+
 
     changeView(option, index) {
         this.setState({
