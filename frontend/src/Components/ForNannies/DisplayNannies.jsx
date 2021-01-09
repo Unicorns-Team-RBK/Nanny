@@ -1,9 +1,10 @@
 import React from 'react';
-
+import "../Css files/displayNannies.css"
 
 const DisplayNannies =  (props)  =>{
   return (
     <div className="displaynannies">
+      <h1 id="displaytitle">Scroll to see Our Nannies</h1>
     <ul>
     {props.nannyInfos.map((info,index ) =>{
       return (
@@ -12,11 +13,12 @@ const DisplayNannies =  (props)  =>{
         <img className="Image" src={info.Profile_picture} />
         </div>
         <div>
-        <span className= "name" >{info.FirstName}</span>
-        <span className= "name">{info.LastName}</span>
+        <span id="displayn">{info.FirstName}</span>
+        <span> </span>
+        <span id="displayn">{info.LastName}</span>
         </div>
         <div>
-        <button onClick={() => props.handleClick(index)}> More Information </button>
+        <button id="displaybtn" onClick={() => props.handleClick(index)}> See Nanny's profile</button>
         </div>
       </li>
     )

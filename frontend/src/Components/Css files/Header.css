@@ -4,7 +4,7 @@
     padding:0;
 }
 header {
-    background-color :MidnightBlue;
+    background-color:Teal;
     background-size: cover ; 
     background-position: center;
     height: 50px;
@@ -14,22 +14,20 @@ header {
     /* background-color: #f39cd2; */
   
 }
+
 .navbar{
     display: flex;
     padding: 20px;
 }
-#fornan{
-    color :rgb(180, 19, 180);
-}
+
 nav{
-    
     flex :1;
     text-align: right;
 }
 nav ul {
     display: inline-block;
     list-style-type:none ;
-color :rgb(241, 234, 241);
+
 }
 nav ul li {
     display: inline-block;

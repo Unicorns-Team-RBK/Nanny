@@ -24,8 +24,8 @@ const logout = () => {
           <button onClick={logout}>Log out</button>
         ) : (
           <>
-          <button onClick={RegisterParent}>Register</button>
-          <button onClick={login}>Log in</button>
+          <button id="Register" onClick={RegisterParent}>Register</button>
+          <button id="Login" onClick={login}>Log in</button>
           </>
         )
       }

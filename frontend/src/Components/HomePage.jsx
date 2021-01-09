@@ -21,8 +21,8 @@ const offers = () => history.push("/SearchNannies")
         <h1 id="title">Supporting Families with Trusted &amp; Vetted Child Care</h1>
         <div className="partone">
 				<p id="exceptional"className="sub-title">Exceptional Nannies for Exceptional Families.</p>
-        <button id="forpar"className="btn" onClick={forparent}>For Parents</button>
-        <button id="fornan"className="btn" onClick={fornanies}>For Nannies</button>
+        <button className="btn-up" onClick={forparent}>For Parents</button>
+        <button  className="btn-up" onClick={fornanies}>For Nannies</button>
         </div>
 
         {
@@ -32,8 +32,8 @@ const offers = () => history.push("/SearchNannies")
         }
 
 			<div className="part2" >
-        <div className="imageCentreA">
-          <img src="https://d2rgzcku886wi.cloudfront.net/images/little-girl-reading-a-book_v3.jpg"></img>
+        <div className="">
+          <img id="imageCentreA"src="https://d2rgzcku886wi.cloudfront.net/images/little-girl-reading-a-book_v3.jpg" ></img>
         </div>
 				<h2>A Unique Blend of Nannies and Education</h2>
 				<p className="sub-title">About Our Nanny Agency</p>
@@ -57,16 +57,18 @@ const offers = () => history.push("/SearchNannies")
 				<p><span className="rouge">We give you</span> back the one resource that families are always short on: time.</p>
       </div>
       <div className="part3" >
-          <div className="imageLeft">
-            <img src="https://d2rgzcku886wi.cloudfront.net/images/new-york-nanny-in-park.jpg"></img>
+          <div >
+            <img className="imageLeft" src="https://d2rgzcku886wi.cloudfront.net/images/new-york-nanny-in-park.jpg"></img>
+          
+          <p id="forfam">for families</p>
+
+					<h4 id="datenight">Date night? Tickets to Hamilton? Looking for a full time or part time nanny? </h4>
           </div>
-          <p >for families</p>
-					<h4>Date night? Tickets to Hamilton? Looking for a full time or part time nanny? </h4>
-          <button onClick={startsearch}>Get Started</button>
+          <button className="btn" onClick={startsearch}>Get Started</button>
 
 
           <div className="imageRight">
-            <img src="https://d2rgzcku886wi.cloudfront.net/images/index-sitters.jpg"></img>
+            <img id="test" src="https://d2rgzcku886wi.cloudfront.net/images/index-sitters.jpg"></img>
           </div>
           <p>FOR NANNIES</p>
 					<h4>Do you have what it takes to be a Nanny?</h4>
@@ -80,4 +82,3 @@ const offers = () => history.push("/SearchNannies")
   
   }
 export default HomePage;
-
