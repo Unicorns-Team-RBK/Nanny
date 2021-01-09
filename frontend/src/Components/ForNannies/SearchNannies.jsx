@@ -1,8 +1,13 @@
 import React from 'react';
 import nannyInfos from '../../fakedatanannies'
 import DisplayNannies from './DisplayNannies';
-import NannyProfile from './NannyProfile';
+
+
 import "../Css files/Searchnannies.css";
+
+import NannyProfile from './NannyProfile'
+import axios from 'axios';
+
 
 class SearchNannies extends React.Component  {
     constructor(props) {
@@ -14,22 +19,32 @@ class SearchNannies extends React.Component  {
         }
     }
 
+    componentDidMount() {
+        axios.get('http://localhost:5000/parent/SearchNannies')
+          .then(response => {
+            console.log('Received data from server: ', response.data)
+            this.setState({
+              nannyInfos: response.data
+            })
+          })
+          .catch(error => {
+            console.error('Error fetching data from server: ', error)
+          })
+      }
+
+
+
+
+
     changeView(option, index) {
         this.setState({
           view: [option],
           currentNanny: this.state.nannyInfos[index]
         });
     }
+
+
     
-    // renderView() {
-    //     const { view } = this.state;
-    
-    //     if (view === 'feed') {
-    //       return <DisplayNannies nannyInfos={this.state.nannyInfos} handleClick={(index) => this.changeView('anypostview', index)} />
-    //     } else {
-    //       return <NannyProfile post={this.state.currentPost} />
-    //     }
-    //   }
 
     render(){
       const { view } = this.state;
