@@ -37,16 +37,9 @@ class SearchNannies extends React.Component  {
           currentNanny: this.state.nannyInfos[index]
         });
     }
+
+
     
-    // renderView() {
-    //     const { view } = this.state;
-    
-    //     if (view === 'feed') {
-    //       return <DisplayNannies nannyInfos={this.state.nannyInfos} handleClick={(index) => this.changeView('anypostview', index)} />
-    //     } else {
-    //       return <NannyProfile post={this.state.currentPost} />
-    //     }
-    //   }
 
     render(){
       const { view } = this.state;
