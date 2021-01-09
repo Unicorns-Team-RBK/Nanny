@@ -12,7 +12,6 @@ const forparent = () => history.push("/ForParents");
 const offers = () => history.push("/SearchNannies")
 
     return (
-    <div>
 
         <div className="part1">
 

@@ -4,6 +4,8 @@ const jwt = require("jsonwebtoken");
 const auth = require("../Middleware/auth");
 const Parent = require("../Models/parentsModel");
 const Nanny = require("../Models/nannyModel");
+const bodyParser = require('body-parser');
+
 require("dotenv").config();
 
 router.post("/RegisterParent", async (req, res) => {
@@ -127,5 +129,21 @@ router.get('/SearchNannies',auth,function (req, res) {
       res.status(404).send(dbError)
     })
 });
+
+router.use(bodyParser.json());
+router.use(bodyParser.urlencoded({extended: false}));
+
+router.post('/SearchNannies', function (req, res){
+  console.log('Post on /SearchNannies :' , req.body)
+  Nanny.find({region : req.body.region, }).then(filteredRes =>{
+    console.log('Filtered Data :', filteredRes)
+    const array = filteredRes.filter((element) => { 
+      return element.avaibility.day === req.body.day && element.avaibility.time === req.body.time
+    })
+    console.log ('array filtered :' ,array)
+    res.send(array)
+  })
+  
+})
 
 module.exports = router;

@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import ParentContext from "../ParentContext";
+import ErrorNotice from "./ErrorNotice";
 import Axios from "axios";
 import "../Components/Css files/login.css"
 
@@ -8,6 +9,7 @@ export default function Login () {
 
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [error, setError] = useState();
 
   const { setParentData } = useContext(ParentContext);
   const history = useHistory();
@@ -27,7 +29,7 @@ export default function Login () {
       history.push('/')
 
      } catch (err) {
-      console.log("ERROR", err)
+      err.response.data.msg && setError(err.response.data.msg)
     }
   }
 
@@ -35,6 +37,7 @@ export default function Login () {
   <div>
     <div className="page">
       <h2>Log in</h2>
+      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
       <form className="form" onSubmit = {submit} >
         <div>
         <label htmlFor="login-email">Email</label>
