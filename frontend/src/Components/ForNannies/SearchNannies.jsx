@@ -40,7 +40,7 @@ class SearchNannies extends React.Component  {
                        view === 'feed' ?
                          <DisplayNannies nannyInfos={this.state.nannyInfos} handleClick={(index) => this.changeView('anypostview', index)} />
                         :
-                         <NannyProfile post={this.state.currentPost} />
+                         <NannyProfile Info={this.state.currentNanny} />
                     }
                 </div>
             </div>
