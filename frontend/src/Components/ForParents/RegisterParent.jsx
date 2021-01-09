@@ -38,70 +38,83 @@ export default function RegisterParent () {
   }
 
   return (
-    <div className="page">
-      <h2>WELCOME TO MY GOOD NANNY</h2>
-      <h4>Parents: create your account </h4>
+    <div className="page"> 
+    
+      <h2 id="titleform">WELCOME TO MY GOOD NANNY</h2>
+      <div>
+      <h4 id="subtitleone">Parents: create your account </h4>
 
 
-      <p className="registration__info">Already have an account? <a href="http://localhost:3000/login">Log in</a>.</p>
-      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
-        
+     
+      </div>  
       <form className="form" onSubmit = {submit} >
-
-        <label htmlFor="register-display-name">First Name</label>
+          <div id="register">
+        <label >First Name</label>
         <div>
           <input
-            id="register-display-name"
+            //id="register"
             type="text"
             name="firstName"
             onChange={(e) => setfirstName(e.target.value)}
           />
         </div>
+
+        </div>
+        <div id="register">
         <div>
-          <label htmlFor="register-display-name">Last name</label>
+          <label >Last name</label>
         </div>
         <div>
           <input
-            id="register-display-name"
+            
             type="text"
             name = "lastName"
             onChange={(e) => setlastName(e.target.value)}
           />
         </div>
+        </div>
+        <div id="register">
         <div>
-          <label htmlFor="register-email">Email</label>
+          <label >Email</label>
         </div>
         <div>
           <input
-            id="register-email"
+            
             type="email"
             name= "email"
             onChange={(e) => setEmail(e.target.value)}
           />
+          </div>
         </div>
+        <div id="register">
         <div>
-          <label htmlFor="register-password">Password</label>
+          <label >Password</label>
         </div>
         <div>
           <input
-            id="register-password"
+           
             type="password"
             name = "password"
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
+        
         <div>
           <input
+          
             type="password"
             name = "password"
             placeholder="Verify password"
             onChange={(e) => setPasswordCheck(e.target.value)}
           />
         </div>
+        </div>
         <div>
-          <input type="submit" value="Register" />
+          <input className="btnregister" id="register" type="submit" value="Register" />
         </div>
       </form>
+      <p id="subtitletwo">Already have an account? <a href="http://localhost:3000/login">Log in</a>.</p>
+      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
     </div>
   )
 }

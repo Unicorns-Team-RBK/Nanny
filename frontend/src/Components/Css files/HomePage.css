@@ -1,19 +1,27 @@
-*{
-    margin:0 ;
-    padding:0;
-}
-#imageLeft{
-    margin-left: 50%;
-}
+
+
+
 body{
     background-color :rgb(241, 234, 241);
 }
-.partone{
-margin-left:42% ;
+#title{
+    margin-top: 20px;
+    margin-left: 12%;
+    font-size: 270%;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
 }
-
+.btn{
+    margin-left: 45%;
+}
 #exceptional{
-    margin-left:1% ;
+    margin-left:-47px ;
+    font-style: italic;
+    color: DarkSlateGray;
+    font-size: 35px;
+}
+#imageCentreA{
+    margin-left:31%;
 }
 #forpar{
     margin-left: 7%;
@@ -21,9 +29,23 @@ margin-left:42% ;
 #fornan{
     margin-left:4% ;
 }
-
-#title{
-    margin-left: 14%;
-    font-size: 270%;
-    color: crimson;
+.partone{
+margin-left:42% ;
 }
+
+#test{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+.imageLeft{
+margin-left: 40px;
+
+}
+#forfam{
+   /*  margin-left: 60%;
+     margin-top: -80px;*/
+}
+
+
