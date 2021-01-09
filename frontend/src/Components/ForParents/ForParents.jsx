@@ -1,9 +1,17 @@
 import "../Css files/ForParents.css"
 import { useHistory } from "react-router-dom";
+<<<<<<< HEAD
 function ForParents() {
   const history = useHistory();
 const nannybios = () => history.push("/SearchNannies");
 const familyapplication = () => history.push("/RegisterParent");
+=======
+
+function ForParents() {
+  const history = useHistory();
+  const startsearch = () => history.push("/RegisterParent");
+  
+>>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
 
     return (
    <div>
@@ -14,7 +22,11 @@ const familyapplication = () => history.push("/RegisterParent");
             we uphold the highest standards of integrity, safety, and scrutiny in selecting the very best 
             nannies to care for your children.
         </h1>
+<<<<<<< HEAD
         <button onClick={familyapplication}>Fill out a Family Application</button>
+=======
+        <button onClick={startsearch} >Fill out a Family Application</button>
+>>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
          <div class="image">
             <img src="https://previews.123rf.com/images/asife/asife1307/asife130700042/21143708-cute-baby-girl-playing-with-leaves-in-autumn.jpg"></img>
           </div>
@@ -41,7 +53,11 @@ const familyapplication = () => history.push("/RegisterParent");
     <h4>Part-time Child Care</h4>
     <p>For families looking for dedicated, active, and engaging individuals for regularly scheduled part-time and after-school care, full days, weekends, mornings, afternoons, or evenings.</p>
     </div>
+<<<<<<< HEAD
     <button className="btn" onClick={familyapplication} >Fill out Family Application </button>
+=======
+    <button className="btn" onClick={startsearch} >Fill out Family Application </button>
+>>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
 
   
   <div className="part4">
@@ -63,18 +79,22 @@ const familyapplication = () => history.push("/RegisterParent");
   <p>When we meet with nannies , we’re looking for a lot more than just standard qualifications. In fact, our recruitment directors won’t lower their standards to meet demand. We'll hand select our top candidates for your family, and we stand behind every candidate that we present. We think they’re all pretty special.
    All of the Nannies on our site have completed our six step screening process. Click below to view individual biographies of our selective group of Nannies.</p>
    <div class="image">
-            <img src="https://d2rgzcku886wi.cloudfront.net/images/babysitter-in-park-with-child.jpg"></img>
+      <img src="https://d2rgzcku886wi.cloudfront.net/images/babysitter-in-park-with-child.jpg"></img>
     </div>
   <button className="btn" onClick={nannybios}>View Nannies Bios</button>
 
   <div className="part5">
-         <div class="image">
+         <div className="image">
             <img src="https://media.gettyimages.com/photos/smiling-mother-or-nanny-with-baby-girl-picture-id637854396"></img>
           </div>
          
 					<h4>Are you looking for a nanny or a babysitter?</h4>
           <p>Fill Out a Family Application to Get Started</p>
+<<<<<<< HEAD
           <button  className="btn" onClick={familyapplication}>Start Now</button>
+=======
+          <button  className="btn" onClick={startsearch} >Start Now</button>
+>>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
     </div>
   </div>
 

@@ -1,6 +1,3 @@
-const db = require('../index.js')
-const Nanny =require ('./nannyModel.js')
-
 //this 'nannyInfos' array of objects conatins example of informations of some nannies profiles.
 const nannyInfos = [
     {   Profile_picture:"https://th.bing.com/th/id/R9f909e47ddfdd7ab255971b2575dcfb8?rik=8JdK90F8aI9J7Q&riu=http%3a%2f%2fwritestylesonline.com%2fwp-content%2fuploads%2f2016%2f08%2fFollow-These-Steps-for-a-Flawless-Professional-Profile-Picture-1024x1024.jpg&ehk=at%2bW8ahmVDAWSjLun4vkjMUmmlvUD7psBtJ5Bf9jSfA%3d&risl=&pid=ImgRaw",
@@ -83,11 +80,5 @@ const nannyInfos = [
 
     },
     
-]
- 
-const insertNannyInfos = function() {
-    Nanny.create(nannyInfos)
-      .then(() => db.disconnect());
-  };
-  
-insertNannyInfos();
+]; 
+export default nannyInfos;

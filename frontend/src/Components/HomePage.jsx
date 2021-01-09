@@ -1,19 +1,30 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
+import ParentContext from "../ParentContext";
 
 
 function HomePage() {
-
+const {parentData} = useContext(ParentContext)
 const history = useHistory();
 const startsearch = () => history.push("/RegisterParent");
 const fornanies = () => history.push("/ForNannies");
 const forparent = () => history.push("/ForParents");
+<<<<<<< HEAD
 const started = () => history.push("/RegisterParent");
     return (
     <div>
         <div className="part1">
         <div className="image">
           <img src="https://previews.123rf.com/images/stokkete/stokkete1410/stokkete141000543/32580531-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img>
+=======
+const offers = () => history.push("/SearchNannies")
+
+    return (
+    <div>
+        <div className="part1">
+        <div class="image">
+          {/* <img src="https://previews.123rf.com/images/stokkete/stokkete1410/stokkete141000543/32580531-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img> */}
+>>>>>>> 1d3d09c4c33953fd66e494d59ec29f399d8b6408
         </div>
         <h1>Supporting Families with Trusted &amp; Vetted Child Care</h1>
 				<p className="sub-title">Exceptional Nannies for Exceptional Families.</p>
@@ -21,7 +32,12 @@ const started = () => history.push("/RegisterParent");
         <button className="btn" onClick={fornanies}>For Nannies</button>
         </div>
 
-    
+        {
+          parentData.parent ? (
+            <button onClick={offers}>Nannies Offers</button>
+          ) : <></>
+        }
+
 			<div className="part2" >
         <div class="image">
           <img src="https://d2rgzcku886wi.cloudfront.net/images/little-girl-reading-a-book_v3.jpg"></img>
