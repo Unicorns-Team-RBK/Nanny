@@ -2,7 +2,7 @@ import "../Css files/ForParents.css"
 import { useHistory } from "react-router-dom";
 function ForParents() {
   const history = useHistory();
-const nannybios = () => history.push("-display,all,nanies-");
+const nannybios = () => history.push("/SearchNannies");
 const familyapplication = () => history.push("/RegisterParent");
 
     return (
@@ -65,7 +65,7 @@ const familyapplication = () => history.push("/RegisterParent");
    <div class="image">
             <img src="https://d2rgzcku886wi.cloudfront.net/images/babysitter-in-park-with-child.jpg"></img>
     </div>
-  <button className="btn" onClick={familyapplication}>View Nannies Bios</button>
+  <button className="btn" onClick={nannybios}>View Nannies Bios</button>
 
   <div className="part5">
          <div class="image">
