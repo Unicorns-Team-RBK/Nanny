@@ -79,6 +79,23 @@ const nannyInfos = [
         about:"Praised for creating safe environments for children in alignment with parent goals and expectations. Assimilated into households with diverse traditions, routines and religious/dietary practices. Accommodated last-minute schedule changes and adhered to parent guidelines and cultural mores governing the care, safety, education and enrichment of their children.", 
 
     },
+
+    ///////////////////////////////////
+
+    {   Profile_picture:"https://media04.meinbezirk.at/user/2019/06/21/3/64983_L.jpg?1561147536",
+    FirstName:"Olfa",
+    LastName:"Sanchez",
+    email:"Olfasanchez@gmail.fr",
+    phone_number:"+16102448290",
+    region : "Mennouba",
+    avaibility : {
+        day : "Wednesday",
+        time : "Night",
+        
+    },
+    about:"Qualified Nanny with NNEB Diploma in Childcare and BSc. Hons Degree in Health & Child Development.I used to work as a social worker and child support officer and have over 8 years of direct experience as a Nanny with children from newborns up to 10 years old.I'm also a qualified teacher of English as a Foreign Language (TEFL Certificate) and have extensive teaching experience with school & pre-school aged children.I'm a very proactive, energetic and flexible nanny who loves all kinds of sports", 
+
+},
     
 ]; 
 export default nannyInfos;
