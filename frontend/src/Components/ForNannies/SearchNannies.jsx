@@ -1,18 +1,54 @@
 import React from 'react';
-import nannyInfos from '../../fakedatanannies'
+//import nannyInfos from '../../fakedatanannies'
 import DisplayNannies from './DisplayNannies';
-import NannyProfile from './NannyProfile';
+
+
 import "../Css files/Searchnannies.css";
+
+import NannyProfile from './NannyProfile'
+import axios from 'axios';
+import $ from 'jquery';
+
 
 class SearchNannies extends React.Component  {
     constructor(props) {
         super(props);
         this.state = {
         view : "feed",
-        nannyInfos : nannyInfos,
+        nannyInfos : [],
         currentNanny : {},
         }
     }
+
+    componentDidMount() {
+        let token = localStorage.getItem("auth-token");
+        axios.get('http://localhost:5000/parent/SearchNannies', {headers: { 'x-auth-token': token }})
+          .then(response => {
+            console.log('Received data from server: ', response.data)
+            this.setState({
+              nannyInfos: response.data
+            })
+          })
+          .catch(error => {
+            console.error('Error fetching data from server: ', error)
+          })
+      }
+
+      /*componentDidMount(){
+        let token = localStorage.getItem("auth-token");
+        $.post('http://localhost:5000/parent/SearchNannies', {headers: { 'x-auth-token': token }},
+         (res) => {
+                 console.log('server response: ',res)
+                 this.setState({
+                    nannyInfos: res
+                  })
+                 }
+         )
+      }*/
+
+
+
+
 
     changeView(option, index) {
         this.setState({
@@ -20,16 +56,9 @@ class SearchNannies extends React.Component  {
           currentNanny: this.state.nannyInfos[index]
         });
     }
+
+
     
-    // renderView() {
-    //     const { view } = this.state;
-    
-    //     if (view === 'feed') {
-    //       return <DisplayNannies nannyInfos={this.state.nannyInfos} handleClick={(index) => this.changeView('anypostview', index)} />
-    //     } else {
-    //       return <NannyProfile post={this.state.currentPost} />
-    //     }
-    //   }
 
     render(){
       const { view } = this.state;

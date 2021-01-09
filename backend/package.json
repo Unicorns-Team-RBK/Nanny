@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
+    "start": "  sudo kill -9 $(sudo lsof -t -i:5000) && nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:setup": "node Models/nanny_profileinfos.js"
   },
@@ -17,6 +17,7 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.11.10"
+    "mongoose": "^5.11.10",
+    "nodemon": "^2.0.7"
   }
 }
