@@ -1,21 +1,23 @@
 import React from 'react';
-import nannyInfos from '../../fakedatanannies'
+//import nannyInfos from '../../fakedatanannies'
 import DisplayNannies from './DisplayNannies';
 import NannyProfile from './NannyProfile'
 import axios from 'axios';
+import $ from 'jquery';
 
 class SearchNannies extends React.Component  {
     constructor(props) {
         super(props);
         this.state = {
         view : "feed",
-        nannyInfos : nannyInfos,
+        nannyInfos : [],
         currentNanny : {},
         }
     }
 
     componentDidMount() {
-        axios.get('http://localhost:5000/parent/SearchNannies')
+        let token = localStorage.getItem("auth-token");
+        axios.get('http://localhost:5000/parent/SearchNannies', {headers: { 'x-auth-token': token }})
           .then(response => {
             console.log('Received data from server: ', response.data)
             this.setState({
@@ -26,6 +28,18 @@ class SearchNannies extends React.Component  {
             console.error('Error fetching data from server: ', error)
           })
       }
+
+      /*componentDidMount(){
+        let token = localStorage.getItem("auth-token");
+        $.post('http://localhost:5000/parent/SearchNannies', {headers: { 'x-auth-token': token }},
+         (res) => {
+                 console.log('server response: ',res)
+                 this.setState({
+                    nannyInfos: res
+                  })
+                 }
+         )
+      }*/
 
 
 
