@@ -1,0 +1,24 @@
+.Image {
+    width: 300px;
+    height: auto;
+    /*margin-left: 50%;*/
+}
+.displaynannies{
+    margin-left: 38%;
+    color:crimson;
+    font-size: 25px;
+    font-weight: 200px;
+    padding-top: 28px;
+}
+#displaytitle{
+    margin-left: -14%;
+
+}
+#displaybtn{
+    padding:3px;
+    background-color:teal;
+    border-radius: 8px;
+    font-size: 15px;
+    color:white;
+    padding:5px 5px;
+}

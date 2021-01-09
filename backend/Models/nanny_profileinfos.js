@@ -6,7 +6,7 @@ const nannyInfos = [
     {   Profile_picture:"https://th.bing.com/th/id/R9f909e47ddfdd7ab255971b2575dcfb8?rik=8JdK90F8aI9J7Q&riu=http%3a%2f%2fwritestylesonline.com%2fwp-content%2fuploads%2f2016%2f08%2fFollow-These-Steps-for-a-Flawless-Professional-Profile-Picture-1024x1024.jpg&ehk=at%2bW8ahmVDAWSjLun4vkjMUmmlvUD7psBtJ5Bf9jSfA%3d&risl=&pid=ImgRaw",
         FirstName:"fathia",
         LastName:"Williams",
-        email:"fathia_williams@yahoo.com",
+        email:"fathia_wilgsgfdgsfdgliams@yahoo.com",
         phone_number:"+16102388183",
         region : "Sfax",
         avaibility : {
@@ -20,7 +20,7 @@ const nannyInfos = [
     {   Profile_picture:"https://i.pinimg.com/736x/0f/b7/42/0fb742a48bb702427fcf567dfef4dcd3--profile-pictures-head-shots.jpg",
         FirstName:"Mongia",
         LastName:"Simpson",
-        email:"simpson.Mongia@gmail.it",
+        email:"simpson.Mdfgsggongia@gmail.it",
         phone_number:"+15854380046",
         region : "Sousse",
         avaibility : {
@@ -36,7 +36,7 @@ const nannyInfos = [
     {   Profile_picture:"https://thebod.church/wp-content/uploads/2019/11/Website-Headshots-Laura.jpg",
         FirstName:"khadija",
         LastName:"Carignton",
-        email:"carignton_khadija@hotmail.com",
+        email:"carignhgfjfgton_khadija@hotmail.com",
         phone_number:"+16102458310",
         region : "Ariana",
         avaibility : {
@@ -52,7 +52,7 @@ const nannyInfos = [
     {   Profile_picture:"https://media04.meinbezirk.at/user/2019/06/21/3/64983_L.jpg?1561147536",
         FirstName:"Fatma",
         LastName:"Sanchez",
-        email:"Fatmasanchez@gmail.fr",
+        email:"Fatmasancrefefhez@gmail.fr",
         phone_number:"+16102448290",
         region : "Mennouba",
         avaibility : {
@@ -71,7 +71,7 @@ const nannyInfos = [
     {   Profile_picture:"https://chicagophotovideo.com/wp-content/uploads/2018/01/professional-headshots-for-linkedin-chicago-1024x1024.jpg",
         FirstName:"kloe",
         LastName:"Kerry",
-        email:"kloe_kerry@hotmail.com",
+        email:"kloe_kerry@hofeetmail.com",
         phone_number:"+18143519468",
         region : "Gafsa",
         avaibility : {
@@ -83,11 +83,29 @@ const nannyInfos = [
 
     },
     
+    {
+        Profile_picture:"https://media04.meinbezirk.at/user/2019/06/21/3/64983_L.jpg?1561147536",
+     FirstName:"Fatmaaaaa",
+     LastName:"Sanchez",
+     email:"Fatmasadenchez@gmail.fr",
+     phone_number:"+16102448290",
+     region:"Mennouba",
+     avaibility:{
+     day:"Wednesday",
+     time:"Night"
+     } ,
+     about:
+     "taw en7eb floussi bel 7adher"
+     }
+
+
 ]
  
 const insertNannyInfos = function() {
     Nanny.create(nannyInfos)
-      .then(() => db.disconnect());
+      .then(() => {console.log("db created now")});
   };
   
 insertNannyInfos();
+insertNannyInfos();
+

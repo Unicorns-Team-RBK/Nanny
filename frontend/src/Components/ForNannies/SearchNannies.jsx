@@ -7,7 +7,7 @@ import "../Css files/Searchnannies.css";
 
 import NannyProfile from './NannyProfile'
 import axios from 'axios';
-import $ from 'jquery';
+import $, { timers } from 'jquery';
 
 
 class SearchNannies extends React.Component  {
@@ -16,8 +16,33 @@ class SearchNannies extends React.Component  {
         this.state = {
         view : "feed",
         nannyInfos : [],
+        nannyFilter : [],
         currentNanny : {},
+        region : "",
+        day: "",
+        time: "",
         }
+    }
+
+    onChange(e) {
+      this.setState({
+        [e.target.name] : e.target.value,
+      });
+    }
+
+    onSearch(){
+      this.search(this.state.region, this.state.day, this.state.time)
+    }
+
+    search(region, day, time){
+      console.log (`${region} ${day} ${time} was searched`)
+      axios.post('http://localhost:5000/parent/SearchNannies',{region, day, time})
+      .then((response)=>{console.log(response.data)
+        this.setState({
+          view : "filter",
+          nannyFilter : response.data,
+        })
+      })
     }
 
     componentDidMount() {
@@ -57,6 +82,13 @@ class SearchNannies extends React.Component  {
         });
     }
 
+    
+    changeViewSearch(option, index) {
+      this.setState({
+        view: [option],
+        currentNanny: this.state.nannyFilter[index]
+      });
+  }
 
     
 
@@ -69,7 +101,7 @@ class SearchNannies extends React.Component  {
                 <label>Region</label>
                 </div>
                 <div>
-                <select>
+                <select name="region" onChange = {this.onChange.bind(this)}>
                     <option>Tunis</option>
                     <option>Ben Arous</option>
                     <option>Bizerte</option>
@@ -100,7 +132,7 @@ class SearchNannies extends React.Component  {
                 <label>Day</label>
                 </div>
                 <div>
-                <select>
+                <select name="day" onChange = {this.onChange.bind(this)}>
                     <option>Monday</option>
                     <option>Tuesday</option>
                     <option>Wednesday</option>
@@ -114,21 +146,23 @@ class SearchNannies extends React.Component  {
                 <label>Time</label>
                 </div>
                 <div>
-                <select>
+                <select name="time" onChange = {this.onChange.bind(this)}>
+                    <option>Full Time</option>
                     <option>Morning</option>
                     <option>Afternoon</option>
                     <option>Evening</option>
                     <option>Night</option>
                 </select>
                 </div>
-                <button>SEARCH</button>
+                <button onClick= {this.onSearch.bind(this)}>SEARCH</button>
                 </div>
                 <div className="main">
                     {
                        view === 'feed' ?
                          <DisplayNannies nannyInfos={this.state.nannyInfos} handleClick={(index) => this.changeView('anypostview', index)} />
-                        :
-                         <NannyProfile Info={this.state.currentNanny} />
+                        : view === 'filter' ?
+                        <DisplayNannies nannyInfos={this.state.nannyFilter} handleClick={(index) => this.changeViewSearch('anypostview', index)} />
+                        : <NannyProfile Info={this.state.currentNanny} />
                     }
                 </div>
             </div>
