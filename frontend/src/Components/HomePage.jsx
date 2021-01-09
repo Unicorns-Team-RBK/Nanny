@@ -8,7 +8,7 @@ const history = useHistory();
 const startsearch = () => history.push("/RegisterParent");
 const fornanies = () => history.push("/ForNannies");
 const forparent = () => history.push("/ForParents");
-
+const started = () => history.push("/RegisterParent");
     return (
     <div>
         <div className="part1">
@@ -53,7 +53,7 @@ const forparent = () => history.push("/ForParents");
           </div>
           <p >for families</p>
 					<h4>Date night? Tickets to Hamilton? Looking for a full time or part time nanny? </h4>
-          <button>Get Started</button>
+          <button onClick={started}>Get Started</button>
 
 
           <div class="image">
