@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
-import ParentContext from "../ParentContext"
+import ParentContext from "../ParentContext";
+import "../Components/Css files/AuthOptions.css";
 
 export default function AuthOptions() {
 const {parentData, setParentData} = useContext(ParentContext)
@@ -13,13 +14,13 @@ const logout = () => {
     token : undefined,
     parent : undefined
   })
-  localStorage.setItem( "auth-token", "")
+  localStorage.clear()
 }
 
   return (
     <nav className="auth-options">
       {
-        parentData.parent ? (
+        parentData.token ? (
           <button onClick={logout}>Log out</button>
         ) : (
           <>
