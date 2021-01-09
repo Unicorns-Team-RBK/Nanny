@@ -13,13 +13,13 @@ const logout = () => {
     token : undefined,
     parent : undefined
   })
-  localStorage.setItem( "auth-token", "")
+  localStorage.clear()
 }
 
   return (
     <nav className="auth-options">
       {
-        parentData.parent ? (
+        parentData.token ? (
           <button onClick={logout}>Log out</button>
         ) : (
           <>
