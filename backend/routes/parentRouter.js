@@ -101,8 +101,21 @@ router.get("/", auth, async (req, res) => {
   });
 });
 
-
+/*
 router.get('/SearchNannies', auth,function (req, res) {
+  // TODO - your code here!
+  Nanny.find()
+    .then(dbRes => {
+      console.log('Fetched blogs from DB: ', dbRes)
+      res.status(200).send(dbRes)
+    })
+    .catch(dbError => {
+      console.log('Error reading from DB: ', dbError)
+      res.status(404).send(dbError)
+    })
+});*/
+
+router.get('/SearchNannies',auth,function (req, res) {
   // TODO - your code here!
   Nanny.find()
     .then(dbRes => {
