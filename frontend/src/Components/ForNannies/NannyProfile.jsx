@@ -2,7 +2,7 @@ import react from "react";
 
 const ProfileNanny = (props) => (
     <div className="Container">
-        <img className="img" src={props.nannyInfo.Profile_picture}  />
+        {/* <img className="img" src={props.nannyInfo.Profile_picture}  /> */}
         <span className= "name" >{props.nannyInfo.FirstName}</span>
         <span className= "name">{props.nannyInfo.LastName}</span>
         <div className="email"  >`Email : ${props.nannyInfo.email}`</div>

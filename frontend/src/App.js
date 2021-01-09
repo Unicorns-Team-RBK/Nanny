@@ -13,6 +13,7 @@ import ForNannies from './Components/ForNannies/ForNannies'
 import RegisterParent from './Components/ForParents/RegisterParent'
 import RegisterNannies from './Components/ForNannies/RegisterNanny'
 import NanniesAccount from './Components/ForNannies/DisplayNannies'
+import SearchNannies from './Components/ForNannies/SearchNannies'
 
 
 
@@ -66,6 +67,7 @@ export default function App() {
               <Route path="/RegisterNannies" component={RegisterNannies} />
               <Route path="/login" component={Login} />
               <Route path="/displaynannies" component={NanniesAccount} />
+              <Route path="/searchnannies" component={SearchNannies} />
 
             </Switch>
           </div>

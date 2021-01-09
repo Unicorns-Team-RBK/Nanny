@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
 import ParentContext from "../ParentContext";
 
+
 function HomePage() {
-  const {parentData} = useContext(ParentContext)
+const {parentData} = useContext(ParentContext)
 const history = useHistory();
 const startsearch = () => history.push("/RegisterParent");
 const fornanies = () => history.push("/ForNannies");
