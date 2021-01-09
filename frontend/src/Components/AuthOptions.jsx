@@ -15,6 +15,7 @@ const logout = () => {
     parent : undefined
   })
   localStorage.clear()
+  history.push('/')
 }
 
   return (
