@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { useHistory } from "react-router-dom";
 import ParentContext from "../ParentContext";
+import ErrorNotice from "./ErrorNotice";
 import Axios from "axios";
 import "../Components/Css files/login.css"
 
@@ -8,6 +9,7 @@ export default function Login() {
 
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const [error, setError] = useState();
 
   const { setParentData } = useContext(ParentContext);
   const history = useHistory();
@@ -25,28 +27,38 @@ export default function Login() {
       });
       localStorage.setItem("auth-token", loginRes.data.token);
       history.push('/')
-
-    } catch (err) {
-      console.log("ERROR", err)
+      
+     } catch (err) {
+      err.response.data.msg && setError(err.response.data.msg)
     }
   }
 
   return (
-    <div>
-      <div className="page">
-        <h2 id="logintitle">Log in</h2>
-        <form className="form" onSubmit={submit} >
-          <div id="login-form">
-            <div>
-              <label>Email</label>
-            </div>
-            <div>
-              <input
+  <div>
+    <div className="page">
+      <h2>Log in</h2>
+      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
+      <form className="form" onSubmit = {submit} >
+        <div>
+        <label htmlFor="login-email">Email</label>
+</div>
+<div>
+        <input
+          id="login-email"
+          type="email"
+          onChange={(e) => setEmail(e.target.value)}
+        />
+       </div> 
+      <div>
+        <label htmlFor="login-password">Password</label>
+        </div>
+        <div>
+        <input
+          id="login-password"
+          type="password"
+          onChange={(e) => setPassword(e.target.value)}
+          />
 
-                type="email"
-                onChange={(e) => setEmail(e.target.value)}
-              />
-            </div>
           </div>
           <div id="login-form">
             <div>
