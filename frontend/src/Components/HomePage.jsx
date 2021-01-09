@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useHistory } from "react-router-dom";
+import ParentContext from "../ParentContext";
 
 
 function HomePage() {
-
+const {parentData} = useContext(ParentContext)
 const history = useHistory();
 const startsearch = () => history.push("/RegisterParent");
 const fornanies = () => history.push("/ForNannies");
 const forparent = () => history.push("/ForParents");
+const offers = () => history.push("/SearchNannies")
 
     return (
     <div>
@@ -21,7 +23,12 @@ const forparent = () => history.push("/ForParents");
         <button className="btn" onClick={fornanies}>For Nannies</button>
         </div>
 
-    
+        {
+          parentData.parent ? (
+            <button onClick={offers}>Nannies Offers</button>
+          ) : <></>
+        }
+
 			<div className="part2" >
         <div class="image">
           <img src="https://d2rgzcku886wi.cloudfront.net/images/little-girl-reading-a-book_v3.jpg"></img>

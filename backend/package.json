@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "sudo kill -9 $(sudo lsof -t -i:5000) && nodemon index.js",
+    "start": "  sudo kill -9 $(sudo lsof -t -i:5000) && nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "db:setup": "node Models/nanny_profileinfos.js"
   },
