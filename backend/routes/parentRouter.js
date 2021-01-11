@@ -14,18 +14,15 @@ router.post("/RegisterParent", async (req, res) => {
     // validate
 
     if (!firstName || !lastName || !email || !password || !passwordCheck)
-      return res.send({ msg: "Not all fields have been entered." });
+      return res.status(400).json({ msg: "Not all fields have been entered." });
     if (password.length < 6)
-      return res
-        .send({ msg: "The password needs to be at least 6 characters long." });
+      return res.status(400).json({ msg: "The password needs to be at least 6 characters long." });
     if (password !== passwordCheck)
-      return res
-        .send({ msg: "Enter the same password twice for verification." });
+      return res.status(400).json({ msg: "Enter the same password twice for verification." });
 
     const existingParent = await Parent.findOne({ email: email });
     if (existingParent)
-      return res
-        .send({ msg: "An account with this email already exists." });
+      return res.status(400).json({ msg: "An account with this email already exists." });
 
 
     const salt = await bcrypt.genSalt();

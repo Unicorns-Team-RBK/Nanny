@@ -15,13 +15,14 @@ const logout = () => {
     parent : undefined
   })
   localStorage.clear()
+  history.push('/')
 }
 
   return (
     <nav className="auth-options">
       {
         parentData.token ? (
-          <button onClick={logout}>Log out</button>
+          <button id="Logout" onClick={logout}>Log out</button>
         ) : (
           <>
           <button id="Register" onClick={RegisterParent}>Register</button>
