@@ -1,8 +1,10 @@
 import "../Css files/ForNannies.css"
+import { useHistory } from "react-router-dom";
 
 function ForNannies() {
+	const history = useHistory();
+	const RegisterNannies =() => history.push("/RegisterNannies"); 
 
-	
     return (
 <div>
 
@@ -14,7 +16,7 @@ function ForNannies() {
         complete an application to join our community. Our hiring process is very selective, 
         so please take your time applying and be as thorough as possible.
         </h1>
-        <button className="btn">Apply Now</button>
+        <button className="btn" onClick={RegisterNannies} >Apply Now</button>
       <div class="image">
         <img id="first-image" src="https://previews.123rf.com/images/rido/rido1906/rido190600039/124982755-portrait-of-african-mature-nanny-with-baby-boy-looking-at-camera-smiling-black-mother-holding-adopte.jpg"></img>
       </div>
@@ -24,7 +26,7 @@ function ForNannies() {
       <h2 id="">We’re here to help you with the professional side of child care so that you can focus on what you do best – working with kids.</h2>
       <p >A working relationship that takes place in someone’s home is very personal, so discussing compensation details like salaries and paid time off with your family employer can be challenging. We’re here to help you balance the personal and the professional from the very beginning.
         Our internal team is always available to help you find the right way to ask a sensitive question or to navigate a challenging situation. We also jump in to help make sure your SmartSitting family has coverage if you get sick or an emergency comes up. We have an incredible appreciation and admiration for our talented community of caregivers and the work that they do.</p>
-      <button  className="btn" >Apply Now</button>
+      <button  className="btn" onClick={RegisterNannies} >Apply Now</button>
       <div class="image">
         <img id="middle-image"src="https://d2rgzcku886wi.cloudfront.net/images/new-york-smartsitter-with-baby.jpg"></img>
       </div>

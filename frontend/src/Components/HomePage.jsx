@@ -9,7 +9,8 @@ function HomePage() {
   const startsearch = () => history.push("/RegisterParent");
   const fornanies = () => history.push("/ForNannies");
   const forparent = () => history.push("/ForParents");
-  const offers = () => history.push("/SearchNannies")
+  const offers = () => history.push("/SearchNannies");
+  const RegisterNannies =() => history.push("/RegisterNannies"); 
 
   return (
 
@@ -74,7 +75,7 @@ function HomePage() {
         </div>
         <p id="titletobenanny">FOR NANNIES</p>
         <h4 id="to-be-a-nanny">Do you have what it takes to be a Nanny?</h4>
-        <button className="btn">Apply Now</button>
+        <button className="btn" onClick={RegisterNannies}>Apply Now</button>
       </div>
     </div>
 
