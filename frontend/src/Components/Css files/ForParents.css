@@ -23,31 +23,42 @@
 
 /*    Part2   */
 #big-subtitleparent{
-
+    margin-left: 20px;
+    color: rgb(230, 212, 55);
+    font-size: 35px;
 }
 #little-subtitle-parent{
-
+margin-left: 23px;
+color: rgb(160, 152, 68);
 }
 #paragraph-subt{
-
+    font-style: italic;
+    font-size: 22px;
+    margin-left: 25px;
 }
-
-#paragraph-parent{
-
+.part4{
+margin-left: 45px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+color: rgb(194, 52, 36);
 }
-
 #image2{
-
+    margin-left: 650px;
 }
 #image3{
-
+    max-width: 45%;
+    MARGIN-LEFT: 80px;
 }
 #lastsentense{
-
+    margin-left: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: teal;
 }
 #lastsentense2{
-
+    margin-left: 500px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:15px ;
+    color: salmon;
 }
-
-
 

@@ -7,7 +7,7 @@ import "../Css files/Searchnannies.css";
 
 import NannyProfile from './NannyProfile'
 import axios from 'axios';
-import $, { timers } from 'jquery';
+// import $, { timers } from 'jquery';
 
 
 class SearchNannies extends React.Component  {
