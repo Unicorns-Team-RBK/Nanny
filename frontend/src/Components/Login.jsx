@@ -27,38 +27,28 @@ export default function Login() {
       });
       localStorage.setItem("auth-token", loginRes.data.token);
       history.push('/')
-      
-     } catch (err) {
+
+    } catch (err) {
       err.response.data.msg && setError(err.response.data.msg)
     }
   }
 
   return (
-  <div>
-    <div className="page">
-      <h2>Log in</h2>
-      {error && <ErrorNotice message = {error} clearError = { () => setError(undefined) } /> }
-      <form className="form" onSubmit = {submit} >
-        <div>
-        <label htmlFor="login-email">Email</label>
-</div>
-<div>
-        <input
-          id="login-email"
-          type="email"
-          onChange={(e) => setEmail(e.target.value)}
-        />
-       </div> 
-      <div>
-        <label htmlFor="login-password">Password</label>
-        </div>
-        <div>
-        <input
-          id="login-password"
-          type="password"
-          onChange={(e) => setPassword(e.target.value)}
-          />
-
+    
+      <div className="page">
+        <h2 id="logintitle">Log in</h2>
+        {error && <ErrorNotice message={error} clearError={() => setError(undefined)} />}
+        <form className="form" onSubmit={submit} >
+          <div id="login-form">
+          <div>
+            <label>Email</label>
+          </div>
+          <div>
+            <input
+              type="email"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
           </div>
           <div id="login-form">
             <div>
@@ -66,7 +56,6 @@ export default function Login() {
             </div>
             <div>
               <input
-
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
               />
@@ -76,9 +65,7 @@ export default function Login() {
             <input id="login-btn" type="submit" value="Log in" />
           </div>
         </form>
-      </div>
-
-
+      
     </div>
   )
 }

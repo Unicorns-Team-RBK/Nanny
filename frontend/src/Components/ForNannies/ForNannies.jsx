@@ -5,27 +5,28 @@ function ForNannies() {
 	
     return (
 <div>
-   <div className="part1">
-		<p >For Nannies</p>
-        <h1>
+
+  <section className="part1" styles="min-height: 500px; background: url(&quot;//d2rgzcku886wi.cloudfront.net/images/about-smartsitting-company-dk.jpg&quot;) 50% -25px no-repeat; padding: 60px 0px 40px; opacity: 1;">
+		<p id="title-nanny" >For Nannies</p>
+        <h1 id="welcome">
         Welcome to the NANNIES Community!
         If you’re a trustworthy, loving, reliable, and energetic caregiver, we’d love for you to 
         complete an application to join our community. Our hiring process is very selective, 
         so please take your time applying and be as thorough as possible.
         </h1>
-        <button>Apply Now</button>
+        <button className="btn">Apply Now</button>
       <div class="image">
-        <img src="https://previews.123rf.com/images/rido/rido1906/rido190600039/124982755-portrait-of-african-mature-nanny-with-baby-boy-looking-at-camera-smiling-black-mother-holding-adopte.jpg"></img>
+        <img id="first-image" src="https://previews.123rf.com/images/rido/rido1906/rido190600039/124982755-portrait-of-african-mature-nanny-with-baby-boy-looking-at-camera-smiling-black-mother-holding-adopte.jpg"></img>
       </div>
-      </div>
+      </section>
      <div className="part2">
-      <h1>NANNIES FamilySupport &amp; YOU</h1>
-      <h2>We’re here to help you with the professional side of child care so that you can focus on what you do best – working with kids.</h2>
-      <p>A working relationship that takes place in someone’s home is very personal, so discussing compensation details like salaries and paid time off with your family employer can be challenging. We’re here to help you balance the personal and the professional from the very beginning.
+      <h1 id="family-support">NANNIES FamilySupport &amp; YOU</h1>
+      <h2 id="">We’re here to help you with the professional side of child care so that you can focus on what you do best – working with kids.</h2>
+      <p >A working relationship that takes place in someone’s home is very personal, so discussing compensation details like salaries and paid time off with your family employer can be challenging. We’re here to help you balance the personal and the professional from the very beginning.
         Our internal team is always available to help you find the right way to ask a sensitive question or to navigate a challenging situation. We also jump in to help make sure your SmartSitting family has coverage if you get sick or an emergency comes up. We have an incredible appreciation and admiration for our talented community of caregivers and the work that they do.</p>
       <button  className="btn" >Apply Now</button>
       <div class="image">
-        <img src="https://d2rgzcku886wi.cloudfront.net/images/new-york-smartsitter-with-baby.jpg"></img>
+        <img id="middle-image"src="https://d2rgzcku886wi.cloudfront.net/images/new-york-smartsitter-with-baby.jpg"></img>
       </div>
      </div>
      <div className="part3">
@@ -35,39 +36,39 @@ function ForNannies() {
 			<ul>
 				<li>
 					<div>
-						<span>1</span>
-						<p>Application</p>
+						<span>1 Application</span>
+						
 					</div>
 				</li>
 				<li>
 					<div>
-						<span>2</span>
-						<p>Interview</p>
+						<span>2 Interview</span>
+						
 					</div>
 				</li>
 				<li>
 					<div>
-						<span>3</span>
-						<p>References</p>
+						<span>3 References</span>
+						
 					</div>
 				</li>
 				<li>
 					<div>
-						<span>4</span>
-						<p>Background Check</p>
+						<span>4 Background Check</span>
+						
 					</div>
 				
 				</li>
 				<li>
 					<div>
-						<span>5</span>
-						<p>Communication</p>
+						<span>5 Communication</span>
+						
 					</div>
 				</li>
 				<li>
 					<div>
-						<span>6</span>
-						<p>Placement Evaluation</p>
+						<span>6 Placement Evaluation</span>
+						
 					</div>
 				</li>
 			</ul>

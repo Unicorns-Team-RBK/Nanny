@@ -11,8 +11,34 @@ body{
     color: crimson;
     font-family: Arial, Helvetica, sans-serif;
 }
+.btn-up{
+    padding:30px 30px;
+}
 .btn{
-    margin-left: 45%;
+    margin-left: 38%;
+    font-size: 160%;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px 60px 10px 60px;
+    background-color: rgb(196, 10, 47);
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+#btn-parent{
+    padding:6px;
+    background-color:khaki;
+    border-radius: 8px;
+    font-size: 20px;
+    color:DarkSlateGray;
+}
+#btn-nanny{
+    padding:6px;
+    background-color:khaki;
+    border-radius: 8px;
+    font-size: 20px;
+    color: DarkSlateGray;
+    margin-left: 20px
 }
 #exceptional{
     margin-left:-47px ;
@@ -23,29 +49,93 @@ body{
 #imageCentreA{
     margin-left:31%;
 }
-#forpar{
-    margin-left: 7%;
+#unique{
+    color: rgb(3, 107, 107);
+    margin-left: 400px;
+    padding: 30px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
-#fornan{
-    margin-left:4% ;
+.sub-title{
+    margin-left: 20px;
+    font-size: 30px;
+    color: rgb(231, 75, 47);
+    padding: 12px 12px;
 }
+#We-paragraph{
+    margin-left: 15px;
+    font-size: 20px;
+    font-style: italic;
+
+}
+#imageCentreB{
+    width: 50px;
+    width: 496px;
+    margin-left: 170px;
+    padding: 6px 30px;
+    
+}
+#to-be-a-nanny{
+    color:rgb(3, 107, 107);
+    margin-left: 350px;
+    padding: 30px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+#titletobenanny{
+margin-left: 560px;
+    padding: 20px 20px;
+    font-size: 25px;
+    color: salmon;
+}
+
+
+
 .partone{
 margin-left:42% ;
 }
 
-#test{
+#imageLast{
+    margin-left: 320px;
     display: inline-block;
     vertical-align: middle;
-    max-width: 100%;
+    max-width: 45%;
     height: auto;
 }
-.imageLeft{
-margin-left: 40px;
-
+.imageMiddle{
+margin-left: 570px;
+margin-top: 40px;
 }
-#forfam{
-   /*  margin-left: 60%;
-     margin-top: -80px;*/
+#imageLast{
+    margin-left: 360px;
+}
+#tittleWeParagraph{
+    color:rgb(230, 212, 55);
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    padding-top: 25px;
+    font-size: 25px;
+}
+.WeParagraph{
+    font-style: italic;
+    color: rgb(5, 48, 48);
+    margin-left: 14px;
+    font-size: 19px;
+    padding: 8px 14px;
 }
 
+#family-title{
+    font-size: 36px;
+    margin-left: 565px;
+    color: salmon;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+#datenight{
+    color:teal;
+    margin-left: 200px;
+    padding: 30px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 27px;
+}
 

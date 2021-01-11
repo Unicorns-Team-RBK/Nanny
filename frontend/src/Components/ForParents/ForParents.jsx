@@ -9,21 +9,21 @@ const familyapplication = () => history.push("/RegisterParent");
     return (
    <div>
       <div className="part1">
-		   <p>For Families</p>
-        <h1>
+		   <p id="title-parent">For Families</p>
+        <h1 id="parents-welcome">
             Parents need a support system just as much as kids do. At NANNY , 
             we uphold the highest standards of integrity, safety, and scrutiny in selecting the very best 
             nannies to care for your children.
         </h1>
-        <button onClick={familyapplication} >Fill out a Family Application</button>
+        <button className="btn" onClick={familyapplication} >Fill out a Family Application</button>
          <div class="image">
-            <img src="https://previews.123rf.com/images/asife/asife1307/asife130700042/21143708-cute-baby-girl-playing-with-leaves-in-autumn.jpg"></img>
+            <img id="first-image-parent" src="https://previews.123rf.com/images/asife/asife1307/asife130700042/21143708-cute-baby-girl-playing-with-leaves-in-autumn.jpg"></img>
           </div>
       </div>
 
       <div className="part2">
-      <h2>OUR SCREENING PROCESS</h2>
-      <p>We follow a rigorous screening process to vet the qualifications and 
+      <h2 id="big-subtitleparent">OUR SCREENING PROCESS</h2>
+      <p id="paragraph-subt">We follow a rigorous screening process to vet the qualifications and 
         background of everyone we invite to join our selective community. 
         We review over one hundred applications per week and interview a select number 
         of applicants in person at our Union Square offices. Upon a successful interview, 
@@ -35,18 +35,18 @@ const familyapplication = () => history.push("/RegisterParent");
     
 
     <div className="part3">
-    <h3>OUR SERVICES</h3>
-    <h4>Full-time Child Care</h4>
-    <p>For families looking for over 35 hours of nanny services per week and a minimum commitment of one year. SmartSitting can help provide the best child care solution possible, matching your child’s individual personality with just the right full-time nanny.</p>
+    <h3 id="big-subtitleparent">OUR SERVICES</h3>
+    <h4 id="little-subtitle-parent">Full-time Child Care</h4>
+    <p id="paragraph-subt">For families looking for over 35 hours of nanny services per week and a minimum commitment of one year. SmartSitting can help provide the best child care solution possible, matching your child’s individual personality with just the right full-time nanny.</p>
     
-    <h4>Part-time Child Care</h4>
-    <p>For families looking for dedicated, active, and engaging individuals for regularly scheduled part-time and after-school care, full days, weekends, mornings, afternoons, or evenings.</p>
+    <h4 id="little-subtitle-parent">Part-time Child Care</h4>
+    <p id="paragraph-subt">For families looking for dedicated, active, and engaging individuals for regularly scheduled part-time and after-school care, full days, weekends, mornings, afternoons, or evenings.</p>
     </div>
     <button className="btn" onClick={familyapplication} >Fill out Family Application </button>
 
   
   <div className="part4">
-    <div class="title red">How we’re different</div>
+    <div id="paragraph-parent">How we’re different</div>
       <p>We have loving, nurturing, and kind nannies.</p>
       <p>We have energetic, creative, college-educated babysitters.</p>
       <p>You can browse profiles online. Neat!</p>
@@ -60,21 +60,21 @@ const familyapplication = () => history.push("/RegisterParent");
   </div>
   
   <div className="part5">
-  <h3>OUR NANNIES</h3>
-  <p>When we meet with nannies , we’re looking for a lot more than just standard qualifications. In fact, our recruitment directors won’t lower their standards to meet demand. We'll hand select our top candidates for your family, and we stand behind every candidate that we present. We think they’re all pretty special.
+  <h3 id="big-subtitleparent">OUR NANNIES</h3>
+  <p id="paragraph-subt">When we meet with nannies , we’re looking for a lot more than just standard qualifications. In fact, our recruitment directors won’t lower their standards to meet demand. We'll hand select our top candidates for your family, and we stand behind every candidate that we present. We think they’re all pretty special.
    All of the Nannies on our site have completed our six step screening process. Click below to view individual biographies of our selective group of Nannies.</p>
    <div class="image">
-      <img src="https://d2rgzcku886wi.cloudfront.net/images/babysitter-in-park-with-child.jpg"></img>
+      <img id="image2" src="https://d2rgzcku886wi.cloudfront.net/images/babysitter-in-park-with-child.jpg"></img>
     </div>
   <button className="btn" onClick={nannybios}>View Nannies Bios</button>
 
   <div className="part5">
          <div className="image">
-            <img src="https://media.gettyimages.com/photos/smiling-mother-or-nanny-with-baby-girl-picture-id637854396"></img>
+            <img id="image3" src="https://media.gettyimages.com/photos/smiling-mother-or-nanny-with-baby-girl-picture-id637854396"></img>
           </div>
          
-					<h4>Are you looking for a nanny or a babysitter?</h4>
-          <p>Fill Out a Family Application to Get Started</p>
+					<h4 id="lastsentense">Are you looking for a nanny or a babysitter?</h4>
+          <p id="lastsentense2">Fill Out a Family Application to Get Started</p>
           <button  className="btn" onClick={familyapplication} >Start Now</button>
     </div>
   </div>
