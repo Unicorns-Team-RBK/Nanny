@@ -1,2 +1,41 @@
-/*todelete*/
+.Nannyform {
+    margin-left: 40%;   
+    margin-top: 55px;
+}
+#nannymiddle{
+    margin-left: 40%;
+    margin-top: 20px;
+
+}
+#titlenannyform{
+    margin-top: 16px;
+    margin-left: 330px;
+    font-size: 270%;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#subtitletwonanny{
+    margin-left: 58%;
+    margin-top: 40px;
+    color :Salmon;
+    font-size: 26px;
+}
+#subtitleonenanny{
+    margin-left: 37%;
+    margin-top: 20px;
+    font-size: 30px;
+    color:Teal;
+}
+#registernanny{
+    margin : 14px 14px;
+    color: crimson;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.btnregisternanny{
+    padding:20px;
+    background-color: teal;
+    border-radius: 8px;
+
+}
 

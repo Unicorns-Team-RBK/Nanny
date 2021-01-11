@@ -11,7 +11,7 @@ export default function RegisterNannies  () {
   return (
         <div className="page">
         <h2>NANNIES FORM </h2>
-        <form className="form">
+        <form className="Nannyform">
           <div>
         <label htmlFor="register-display-name">First Name</label>
         </div>

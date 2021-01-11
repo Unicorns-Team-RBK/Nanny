@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
 *{
     margin:0 ;
-    padding:0;
+   
 }
 header {
     background-color:Teal;
@@ -33,11 +33,15 @@ nav ul li {
     display: inline-block;
     margin: auto;
     margin-right: 60px;
+    
 
 }
 a{
     text-decoration: none;
     /* color:#5e0957; */
+    color:Khaki;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
 }
 .logo {
     widows: 150px;
