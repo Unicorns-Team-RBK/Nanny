@@ -28,7 +28,7 @@ function HomePage() {
       </div>
       {
         parentData.parent ? (
-          <button onClick={offers}>Nannies Offers</button>
+          <button className="btn" onClick={offers}>Nannies Offers</button>
         ) : <></>
       }
 
