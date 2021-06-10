@@ -4,7 +4,49 @@
 body{
     background-color :rgb(241, 234, 241);
 }
-#title{
+
+.cover{
+    background: url(../images/baby-sitter.jpg)no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+
+.btn0{
+    height: 45px;
+    width: 30%;
+    background-color: khaki;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: 	#484848;
+}
+
+.btn1{
+    height: 55px;
+    width: 45%;
+    background-color: khaki;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-weight: 700;
+    color: 	#484848;
+    font-size: 28px;
+}
+
+.btn0:hover{
+    background-color: #CC9933;
+}
+
+.btn1:hover{
+    background-color: #CC9933;
+}
+
+.title {
+    color: rgb(196, 10, 47);
+}
+/* #title{
     margin-top: 20px;
     margin-left: 12%;
     font-size: 270%;
@@ -39,30 +81,34 @@ body{
     font-size: 20px;
     color: DarkSlateGray;
     margin-left: 20px
-}
-#exceptional{
+} */
+/* #exceptional{
     margin-left:-47px ;
     font-style: italic;
     color: DarkSlateGray;
     font-size: 35px;
-}
-#imageCentreA{
+} */
+/* #imageCentreA{
     margin-left:31%;
-}
-#unique{
+} */
+/* #unique{
     color: rgb(3, 107, 107);
     margin-left: 400px;
     padding: 30px 30px;
     font-family: Arial, Helvetica, sans-serif;
 
-}
-.sub-title{
+} */
+/* .sub-title{
     margin-left: 20px;
     font-size: 30px;
     color: rgb(231, 75, 47);
     padding: 12px 12px;
-}
-#We-paragraph{
+} */
+
+
+
+
+/* #We-paragraph{
     margin-left: 15px;
     font-size: 20px;
     font-style: italic;
@@ -87,15 +133,17 @@ margin-left: 560px;
     padding: 20px 20px;
     font-size: 25px;
     color: salmon;
-}
+} */
 
 
 
-.partone{
+/* .partone{
 margin-left:42% ;
-}
+} */
 
-#imageLast{
+
+
+/* #imageLast{
     margin-left: 320px;
     display: inline-block;
     vertical-align: middle;
@@ -137,5 +185,5 @@ margin-top: 40px;
     padding: 30px 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 27px;
-}
+} */
 

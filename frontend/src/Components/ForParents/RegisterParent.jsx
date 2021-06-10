@@ -111,7 +111,7 @@ export default function RegisterParent() {
           </div>
         </div>
         <div>
-          <input className="btnregister" id="register" type="submit" value="Register" />
+          <input className="btnregister" id="register"  type="submit" value="Register" />
         </div>
       </form>
       <p id="subtitletwo">Already have an account? <a href="http://localhost:3000/login">Log in</a>.</p>

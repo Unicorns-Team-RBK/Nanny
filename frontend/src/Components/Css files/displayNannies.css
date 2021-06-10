@@ -1,4 +1,4 @@
-.Image {
+/* .Image {
     width: 300px;
     height: auto;
     
@@ -21,4 +21,29 @@
     font-size: 15px;
     color:white;
     padding:5px 5px;
+} */
+
+.card:hover{
+    -webkit-box-shadow: 5px 5px 15px -3px #000000; 
+    box-shadow: 5px 5px 15px -3px #000000;
+    transition: 0.5s;
+}
+
+.card-body img {
+    height: 300px;
+}
+
+.btn2 {
+    background-color: teal;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    color: #f1f1f1;
+    width: 50%;
+    height: 40px;
+    font-weight: 600;
+}
+
+.btn2:hover{
+    background-color: #005c5c;
 }

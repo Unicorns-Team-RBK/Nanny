@@ -96,66 +96,96 @@ class SearchNannies extends React.Component  {
       const { view } = this.state;
         return (
             <div>
-                <div className="Selection">
-                <div>
-                <label>Region</label>
-                </div>
-                <div>
-                <select name="region" onChange = {this.onChange.bind(this)}>
-                    <option>Tunis</option>
-                    <option>Ben Arous</option>
-                    <option>Bizerte</option>
-                    <option>Sousse</option>
-                    <option>Mahdia</option>
-                    <option>Sfax</option>
-                    <option>Gabes</option>
-                    <option>Nabeul</option>
-                    <option>Monastir</option>
-                    <option>kasserine</option>
-                    <option>Kef</option>
-                    <option>Beja</option>
-                    <option>Gafsa</option>
-                    <option>Tataouine</option>
-                    <option>Sidi bouzid</option>
-                    <option>Jendouba</option>
-                    <option>Siliana</option>
-                    <option>Kairouan</option>
-                    <option>Tozeur</option>
-                    <option>Ariana</option>
-                    <option>Mednin</option>
-                    <option>Kebili</option>
-                    <option>Mennouba</option>
-                    <option>Zaghouan</option>
-                </select>
-                </div>
-                <div>
-                <label>Day</label>
-                </div>
-                <div>
-                <select name="day" onChange = {this.onChange.bind(this)}>
-                    <option>Monday</option>
-                    <option>Tuesday</option>
-                    <option>Wednesday</option>
-                    <option>Thursday</option>
-                    <option>Friday</option>
-                    <option>Saturday</option>
-                    <option>Sunday</option>
-                </select>
-                </div>
-                <div>
-                <label>Time</label>
-                </div>
-                <div>
-                <select name="time" onChange = {this.onChange.bind(this)}>
-                    <option>Full Time</option>
-                    <option>Morning</option>
-                    <option>Afternoon</option>
-                    <option>Evening</option>
-                    <option>Night</option>
-                </select>
-                </div>
-                <button onClick= {this.onSearch.bind(this)}>SEARCH</button>
-                </div>
+                <section className="Selection mt-5">
+                  <h1 className="title text-center py-4">Find Your Nanny</h1>
+                    <div className="container">
+                      <div className="row py-4">
+
+                        <div className="col-lg-4">
+                          
+                            <label className="px-3 fw-bold label">Region : </label>
+                          
+                          
+                            <select className="input" name="region" onChange = {this.onChange.bind(this)}>
+                              <option>...</option>
+                              <option>Tunis</option>
+                              <option>Ben Arous</option>
+                              <option>Bizerte</option>
+                              <option>Sousse</option>
+                              <option>Mahdia</option>
+                              <option>Sfax</option>
+                              <option>Gabes</option>
+                              <option>Nabeul</option>
+                              <option>Monastir</option>
+                              <option>kasserine</option>
+                              <option>Kef</option>
+                              <option>Beja</option>
+                              <option>Gafsa</option>
+                              <option>Tataouine</option>
+                              <option>Sidi bouzid</option>
+                              <option>Jendouba</option>
+                              <option>Siliana</option>
+                              <option>Kairouan</option>
+                              <option>Tozeur</option>
+                              <option>Ariana</option>
+                              <option>Mednin</option>
+                              <option>Kebili</option>
+                              <option>Mennouba</option>
+                              <option>Zaghouan</option>
+                            </select>
+                          
+                        </div>
+
+
+                        <div className="col-lg-4">
+                          
+                            <label className="px-3 fw-bold label">Day : </label>
+                            
+                            
+                            <select className="input" name="day" onChange = {this.onChange.bind(this)}>
+                                <option>...</option>
+                                <option>Monday</option>
+                                <option>Tuesday</option>
+                                <option>Wednesday</option>
+                                <option>Thursday</option>
+                                <option>Friday</option>
+                                <option>Saturday</option>
+                                <option>Sunday</option>
+                            </select>
+                            
+                        </div>
+
+
+                        <div className="col-lg-4">
+                        
+                          <label className="px-3 fw-bold label">Time : </label>
+                          
+                          
+                          <select className="input" name="time" onChange = {this.onChange.bind(this)}>
+                              <option>...</option>
+                              <option>full time</option>
+                              <option>Morning</option>
+                              <option>Afternoon</option>
+                              <option>Evening</option>
+                              <option>Night</option>
+                          </select>
+                          
+                        </div>
+
+                      </div>
+                    </div>
+
+               
+                  <div className="d-flex justify-content-center py-4">
+                    <button className="btn3" onClick= {this.onSearch.bind(this)}>SEARCH</button>
+                  </div>
+            
+
+                
+                
+                </section>
+
+
                 <div className="main">
                     {
                        view === 'feed' ?

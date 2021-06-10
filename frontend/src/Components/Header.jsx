@@ -8,12 +8,12 @@ export default function Header () {
       <header id="header">
         <Link to="/">
         {/* <img class="logo" src="https://www.logodesign.net/logo-new/nanny-with-baby-carriage-8236ld.png?size=1" alt="logo"></img> */}
-      <h1>Welcome To NANNY</h1>
+      <h1 className="logo-title px-5">Welcome To NANNY</h1>
      </Link>
       <nav>
         <ul>
-            <li id="headforpar"><a href="http://localhost:3000/ForParents"> FOR PARENTS </a></li>
-            <li id="headfornan"><a href="http://localhost:3000/ForNannies"> FOR NANNIES </a></li>
+            <li id="headforpar"><a className="logo-title" href="http://localhost:3000/ForParents"> FOR PARENTS </a></li>
+            <li id="headfornan"><a className="logo-title" href="http://localhost:3000/ForNannies"> FOR NANNIES </a></li>
         </ul>
      </nav>
       <AuthOptions/>

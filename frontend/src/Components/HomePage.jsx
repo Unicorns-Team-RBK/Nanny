@@ -19,7 +19,9 @@ function HomePage() {
       <div className="image">
         {/* <img src="https://previews.123rf.com/images/stokkete/stokkete1410/stokkete141000543/32580531-mother-and-son-drawing-and-enjoying-time-together-in-the-living-room-.jpg"></img> */}
       </div>
-      <h1 id="title">Supporting Families with Trusted &amp; Vetted Child Care</h1>
+
+
+      {/* <h1 id="title">Supporting Families with Trusted &amp; Vetted Child Care</h1>
       <div className="partone">
         <p id="exceptional" className="sub-title">Exceptional Nannies for Exceptional Families.</p>
         <div className="btn-up">
@@ -31,13 +33,32 @@ function HomePage() {
         parentData.parent ? (
           <button className="btn" onClick={offers}>Nannies Offers</button>
         ) : <></>
-      }
+      } */}
+
+      <section className="cover">
+        <div className="container py-5">
+          <div className="row py-5">
+            <div className="col-lg-7 py-5 text-center">
+              <h1 className="fw-bold title">Exceptional Nannies for Exceptional Families</h1>
+              <button className="btn0 mt-3 mx-2" onClick={forparent}>For Parents</button>
+              <button className="btn0 mt-3 mx-2" onClick={fornanies}>For Nannies</button>
+              <div>
+              {
+                parentData.parent ? (
+                  <button className="btn1 m-4" onClick={offers}>Nannies Offers</button>
+                ) : <></>
+              }
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="part2" >
-        <div className="">
-          <img id="imageCentreA" src="https://d2rgzcku886wi.cloudfront.net/images/little-girl-reading-a-book_v3.jpg" ></img>
+        {/* <div className="">
+          <img id="imageCentreA" src="./baby-sitter.jpg"></img>
         </div>
-        <h2 id="unique">A Unique Blend of Nannies and Education</h2>
+        <h2 id="unique">A Unique Blend of Nannies and Education</h2> */}
         <p className="sub-title">About Our Nanny Agency</p>
         <p id="We-paragraph">We believe that the early years of life are the most developmentally important for intellectual, social, and emotional health.
         So when we meet with nanny applicants, we’re tirelessly searching for those who share our core values and believe that every moment spent
